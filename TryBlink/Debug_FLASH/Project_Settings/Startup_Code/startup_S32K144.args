@@ -1,0 +1,18 @@
+-c
+-I"C:/NXP/S32DS_ARM_v2.2/S32DS/build_tools/gcc_v6.3/arm32_ewl2/EWL_C/include"
+-I"C:/NXP/S32DS_ARM_v2.2/S32DS/build_tools/gcc_v6.3/arm32_ewl2/EWL_C/include/arm"
+-I"C:/NXP/S32DS_ARM_v2.2/S32DS/build_tools/gcc_v6.3/arm32_ewl2/EWL_Runtime/include"
+-I"C:/NXP/S32DS_ARM_v2.2/S32DS/build_tools/gcc_v6.3/arm32_ewl2/EWL_Runtime/include/arm"
+-I"C:/Users/jorge/workspaceS32DS.ARM.2.2/TryBlink/Generated_Code/"
+-x assembler-with-cpp
+-DTURN_ON_CPU0
+-DSEMIHOSTING
+-DUSING_OS_FREERTOS
+-g3
+-mcpu=cortex-m4
+-mthumb
+-mfloat-abi=hard
+-mfpu=fpv4-sp-d16
+-specs=nano.specs
+-specs=nosys.specs
+--sysroot="C:/NXP/S32DS_ARM_v2.2/S32DS/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
