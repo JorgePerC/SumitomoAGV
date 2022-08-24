@@ -89,5 +89,6 @@ TPDO    | Transmit PDO
     1. [Source](https://www.systranbox.com/where-are-so-files-stored-in-linux/)
 
 1. Download [SocketCAN](http://www.viewtool.com/index.php/en/22-2016-07-29-02-11-32/308-ginkgo-socketcan-software-download)
+    1. Since the file is a ``file.ko``, that basically means it's a loadable kernel module
     1. Follow this [document](http://www.viewtool.com/demo/Ginkgo/Documents/GinkgoSocket%20CAN%20Application%20Note%20v1.0.pdf) to complete the installation
 1. Download the library for the language you'll be using from 
