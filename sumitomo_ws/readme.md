@@ -1,8 +1,8 @@
-# Proyect dependencies:
+# Project dependencies:
 
 This workspace depends on other projects and packages to work properly. Please install them before trying to build.
 
-## Proyects:
+## Projects:
 * [zed-ros-wrapper](https://github.com/stereolabs/zed-ros-wrapper)
 
 ## Packages:
