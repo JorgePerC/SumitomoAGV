@@ -55,6 +55,6 @@
 ## Eclude folders
 
 # zed-ros-wrapper
-devel/
-build/
+sumitomo_ws/build/
+sumitomo_ws/devel/
 sumitomo_ws/src/zed-ros-wrapper/
