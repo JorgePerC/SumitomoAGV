@@ -1,0 +1,2 @@
+zed-ros-wrapper/zed-ros-interfaces:zed-ros-wrapper/zed_nodelets:zed-ros-wrapper/zed_ros:zed-ros-wrapper/zed_wrapper
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/sumitomo/Documents/SumiyomoAGV/devel -DCMAKE_INSTALL_PREFIX=/home/sumitomo/Documents/SumiyomoAGV/install -G Unix Makefiles
