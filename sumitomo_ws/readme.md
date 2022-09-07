@@ -9,3 +9,5 @@ This workspace depends on other projects and packages to work properly. Please i
 * canopen_master
 * ros_canopen
 
+## New to this?
+If you would like a more straigt on process, then run the installSumitomo.sh file
