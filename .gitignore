@@ -52,6 +52,6 @@ Makefile
 ## Eclude folders
 
 # zed-ros-wrapper
-sumitomo_ws/devel/
-sumitomo_ws/build/
+devel/
+build/
 sumitomo_ws/src/zed-ros-wrapper/
