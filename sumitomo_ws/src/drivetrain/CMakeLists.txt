@@ -10,6 +10,7 @@ project(drivetrain)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  can_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -203,3 +204,11 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+##################
+## Actual nodes ##
+##################
+
+add_executable(talker src/talker.cpp)
+target_link_libraries(talker ${catkin_LIBRARIES})
+#add_dependencies(talker drivetrain)
