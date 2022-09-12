@@ -24,12 +24,12 @@ namespace SumitomoDrive{
         bool isForward;
 
         // Methods        
-        virtual void OnInit();
+        virtual void onInit();
 
 
     public:
         // Constructor:
-        Smartris(/* args */);
+        Smartris(ros::NodeHandle *);
 
         // Destructor
         //virtual ~Smartris();

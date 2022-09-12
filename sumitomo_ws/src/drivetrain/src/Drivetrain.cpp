@@ -6,6 +6,7 @@
 #include "std_msgs/String.h"
 #include <geometry_msgs/Twist.h>
 
+#include "SumitomoDrive.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,11 +16,15 @@ int main(int argc, char *argv[])
 
     // Communication handler for node. 
     // It basically starts a node
-    ros::NodeHandle n;
+    ros::NodeHandle nh;
     
+    SumitomoDrive::Smartris motor1 ( &nh ); //
 
     // Define iterations per second
-    ros:: Rate rate(10)
+    ros:: Rate rate(10);
+        
+ 
+    ros::spin();
 
     return 0;
 }

@@ -209,6 +209,9 @@ include_directories(
 ## Actual nodes ##
 ##################
 
-add_executable(talker src/talker.cpp)
-target_link_libraries(talker ${catkin_LIBRARIES})
+add_executable(drivetrain src/Drivetrain.cpp)
+target_link_libraries(drivetrain ${catkin_LIBRARIES})
 #add_dependencies(talker drivetrain)
+
+add_executable(smartris src/SumitomoDrive.cpp)
+target_link_libraries(smartris ${catkin_LIBRARIES})
