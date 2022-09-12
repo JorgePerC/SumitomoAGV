@@ -1,0 +1,33 @@
+
+from pycanopen import *
+import sys
+
+def readCan():
+	canopen = CANopen()
+
+	while True:
+    		canopen_frame = canopen.read_frame()
+    		if canopen_frame:
+        		print canopen_frame
+    		else:
+       	 		print("CANopen Frame parse error")
+
+
+def sendCAN():
+	canopensend = CANopen()
+
+	if len(sys.argv) == 2:
+   		 # get the node address from the first command-line argument
+    		node = int(sys.argv[1])
+	else:
+    		print("usage: %s NODE" % sys.argv[0])
+    		exit(1)
+
+value = canopensend.SDOUploadExp(node, 0x1018, 0x01)
+prin	t("Vendor  ID   = 0x%.8X\n" % value)
+
+value = canopensend.SDOUploadExp(node, 0x1018, 0x02)
+print("Product ID   = 0x%.8X\n" % value)
+
+value = canopensend.SDOUploadExp(node, 0x1018, 0x03)
+print("Software Ver = 0x%.8X\n" % value)
