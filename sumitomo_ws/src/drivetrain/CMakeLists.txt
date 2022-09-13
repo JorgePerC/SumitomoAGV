@@ -11,6 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   can_msgs
+  canopen_chain_node
+  nodelet
+  pluginlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -204,6 +207,19 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+##################
+## Nodelets     ##
+##################
+# NOTE: This is similar to adding a library
+
+# add_library(drivetrain_nodelet src/drivetrain_nodelet.cpp)
+add_library(Smartris
+  src/SumitomoDrive.cpp
+)
+# Specify libraries to link a library or executable target against
+target_link_libraries(
+  Smartris ${catkin_LIBRARIES}
+) 
 
 ##################
 ## Actual nodes ##
@@ -217,5 +233,5 @@ add_executable(drivetrain src/Drivetrain.cpp)
 target_link_libraries(drivetrain ${catkin_LIBRARIES})
 #add_dependencies(talker drivetrain)
 
-add_executable(smartris src/SumitomoDrive.cpp)
-target_link_libraries(smartris ${catkin_LIBRARIES})
+# add_executable(drivetrain src/SumitomoDrive.cpp)
+# target_link_libraries(motorRight ${catkin_LIBRARIES})
