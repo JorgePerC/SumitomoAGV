@@ -1,9 +1,30 @@
 <?xml version="1.0" ?>
 
 <launch> <!-- Root tag for launch files -->
+    <!-- ===== Arguments ===== -->
+    <arg name="CAN_config" value="$(find pkgname)/params/can.yaml"/>
+ 
 
-    <node name="node_name" pkg="ros_pkg" type="executableFile" output="screen"/>
+
+
+    <!-- ===== Launch ROS nodes ===== -->
+    <!-- Load CAN configuration node (file) -->
+    <node name="canopen_chain" pkg="canopen_chain_node" type="canopen_chain_node" output="screen" clear_params="true">
+        <rosparam command="load" file="$(arg CAN_config)" />
+    </node>
+
+    <!-- Start nodelet manager -->
+    <node pkg="nodelet" type="nodelet" name="standalone_nodelet"  args="manager" output="screen"/>
+
+        <!-- Starting a nodelet -->
+
+        <node pkg="nodelet" type="nodelet" name="motorRight" args="load drivetrain/Smartris standalone_nodelet" output="screen">
+
+    </node>     
+
+    
     <!--
+    <node name="node_name" pkg="ros_pkg" type="executableFile" output="screen"/>
     <node name="subscriber_node" pkg="mastering_ros_demo_pkg" type="demo_topic_subscriber" output="screen"/>
     -->
 </launch> 
