@@ -4,6 +4,7 @@
 #include <nodelet/nodelet.h>
 #include <std_msgs/String.h>
 
+
 // Plugin (also needed for nodelets)
 #include <pluginlib/class_list_macros.h>
 #include <pluginlib/class_loader.h>
@@ -23,15 +24,21 @@ namespace SumitomoDrive{
         int nodeID;
         bool isForward;
 
+        // ROS
+        ros::Publisher pub;
+        ros::Subscriber sub;
+
         // Methods        
         virtual void onInit();
 
 
     public:
         // Constructor:
-        Smartris(ros::NodeHandle *);
+        // We don't need to rewrite the constructor. We can just use the default one.
+        // Smartris(ros::NodeHandle *);
 
-        // Destructor
+        // Destructor   
+        // Same as with the constructor. We don't need to rewrite it.
         //virtual ~Smartris();
 
         void setVelocity();
