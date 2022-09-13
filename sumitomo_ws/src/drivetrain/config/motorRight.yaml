@@ -1,8 +1,9 @@
+
+
 nodes:
   node1:
     id: 1
-    name: base_link1_joint
-    eds_pkg: epos4_ros_canopen # optionals package  name for relative path
+    name: motorRight
     eds_file: "config/Smartris_eds.eds" # path to EDS/DCF file
 
 defaults: # optional, all defaults can be overwritten per node
