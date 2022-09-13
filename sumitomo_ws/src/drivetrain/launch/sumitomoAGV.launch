@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<launch> <!-- Root tag for launch files -->
+
+    <node name="node_name" pkg="ros_pkg" type="executableFile" output="screen"/>
+    <!--
+    <node name="subscriber_node" pkg="mastering_ros_demo_pkg" type="demo_topic_subscriber" output="screen"/>
+    -->
+</launch> 
