@@ -7,7 +7,7 @@ Implementation for class SumitomoDrive
 
 
 
-SumitomoDrive::Smartris::Smartris(ros::NodeHandle * nh ): Nodelet::Nodelet (nh){
+SumitomoDrive::Smartris(ros::NodeHandle * nh ): Nodelet::Nodelet (nh){
 
 }
 

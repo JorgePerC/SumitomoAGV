@@ -29,7 +29,7 @@ namespace SumitomoDrive{
 
     public:
         // Constructor:
-        Smartris(ros::NodeHandle *);
+        Smartris(ros::NodeHandle * nh);
 
         // Destructor
         //virtual ~Smartris();
