@@ -35,7 +35,8 @@ namespace SumitomoDrive{
     public:
         // Constructor:
         // We don't need to rewrite the constructor. We can just use the default one.
-        // Smartris(ros::NodeHandle *);
+        // Smartris(ros::NodeHandle * nh);
+        // Smartris();
 
 
         // Destructor   
@@ -58,3 +59,4 @@ namespace SumitomoDrive{
 
 // Process the class as a nodelet
 PLUGINLIB_EXPORT_CLASS(SumitomoDrive::Smartris, nodelet::Nodelet)
+//PLUGINLIB_EXPORT_CLASS(drivetrain, Smartris, SumitomoDrive::Smartris, nodelet::Nodelet)

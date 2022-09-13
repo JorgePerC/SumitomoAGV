@@ -8,7 +8,7 @@
 // ++Plugin imports
 #include <boost/shared_ptr.hpp> 
 
-#include "SumitomoDrive.h"
+//#include "SumitomoDrive.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,12 +20,13 @@ int main(int argc, char *argv[])
     // It basically starts a node
     ros::NodeHandle nh;
     
-    SumitomoDrive::Smartris motor1 ( &nh ); //
+    //SumitomoDrive::Smartris motor1 (); //
 
     // Define iterations per second
     ros:: Rate rate(10);
 
-    // TODO: Initialize ros CANOpen        
+    // TODO: Initialize ros CANOpen   
+        //Does it have a plugin??     
  
     ros::spin();
 
