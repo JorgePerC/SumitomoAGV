@@ -1,0 +1,7 @@
+<library path="drivetrain">
+	<class name="drivetrain/Smartris" type="SumitomoDrive::Smartris" base_class_type="nodelet::Nodelet">
+			<description>
+			Trying to make a nodelet for the Sumitomo Smartris servo motors.
+			</description>
+	</class>
+</library>
