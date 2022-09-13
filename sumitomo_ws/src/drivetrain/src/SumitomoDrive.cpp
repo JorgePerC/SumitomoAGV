@@ -6,15 +6,12 @@ Implementation for class SumitomoDrive
 */
 
 
-
-SumitomoDrive::Smartris(ros::NodeHandle * nh ): Nodelet::Nodelet (nh){
-
-}
-
 void SumitomoDrive::Smartris::onInit(){
     // nh = getNodeHandle();
-    // private_nh = getPrivateNodeHandle();
+    ros::NodeHandle&  private_nh = getPrivateNodeHandle();
+    NODELET_DEBUG("Initializing SumitomoDrive nodelet...");
     // timer_ = nh.createTimer(ros::Duration(1.0), boost::bind(& NodeletClass::timerCb, this, _1));
-    //sub_ = nh.subscribe("incoming_chatter", 10, boost::bind(& NodeletClass::messageCb, this, _1));
-    //pub_ = private_nh.advertise<std_msgs::String>("outgoing_chatter", 10);
+    pub = private_nh.advertise<std_msgs::String>("msg_out",5);
+    //TODO: Change to correct topic
+    sub = private_nh.subscribe("msg_in",5, &Hello::callback, this);
 }

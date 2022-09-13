@@ -209,7 +209,11 @@ include_directories(
 ## Actual nodes ##
 ##################
 
+## Declare a C++ executable
+              # Package   # Node executable
 add_executable(drivetrain src/Drivetrain.cpp)
+# Link executables to the appropriate libraries  
+                    # Node name # Library
 target_link_libraries(drivetrain ${catkin_LIBRARIES})
 #add_dependencies(talker drivetrain)
 
