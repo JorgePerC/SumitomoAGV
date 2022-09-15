@@ -1,0 +1,47 @@
+<!-- ===== Initial differential robot URDF =====-->
+<!-- Note: This is only for testing pourpuses of the
+CAN communication programs we develop.-->
+
+<robot name="simple_agv">
+    
+    <!-- === Link declaration === -->
+        <!-- I'll use link0 as my root link-->
+    
+    <link name="link0">
+        <visual>
+            <geometry>
+                <box size="0.16 0.16 0.12"/>
+            </geometry>
+            <origin xyz="0 0 0.085"/>
+            <material name="white">
+                <color rgba="1 1 1 1"/>
+            </material>
+        </visual>
+    </link>
+    <!-- Simple link definition-->
+    <link name="wheel_r" />
+    <link name="wheel_l" />
+    
+
+    <!-- === Joint definition === -->
+    <joint name="joint1" type="revolute">
+        <parent link="link0"/>
+        <child link="wheel_r"/>
+
+        <origin xyz="5 3 0"/>
+        <!-- Axis rotation-->
+        <axis xyz="-0.9 0.15 0" />
+    </joint>
+    
+    <joint name="joint2" type="revolute">
+        <parent link="link0"/>
+        <child link="wheel_l"/>
+        
+        <origin xyz="-2 5 0"/>
+        <!-- Axis rotation-->
+        <axis xyz="-0.9 0.15 0" />
+    </joint>
+    
+    <!-- === Transmission definition === -->
+
+  </robot>
