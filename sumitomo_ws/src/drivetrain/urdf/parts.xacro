@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="simple_agv">
+<!-- Include constants xacro -->
+<xacro:include filename="$(find drivetrain)/urdf/constants.xacro" />
+<!-- === PARTS ONLY === -->
+
+<!-- = Wheels = -->
+<<xacro:macro name="wheel" params="direction">
+    <visual>
+        <geometry>
+            <cylinder length="${wheel_base}" radius="${wheel_radio}"/>
+        </geometry>
+        <origin rpy="${pi/2} 0 0" xyz="0 ${base_width/2} ${wheel_radio}"/>
+        <material name="black">
+            <color rgba="0 0 0 1"/>
+        </material>
+    </visual>
+</xacro:macro>
+
+<!-- = Transmission = -->
+                                            <!--Note: I use "*" as a separator -->
+<xacro:macro name="transmission_block" params="*joint_name *count *direction">
+    <transmission name="trans_$(count)">
+      
+      <type>transmission_interface/SimpleTransmission</type>
+      
+      <joint name="${joint_name}">
+        <hardwareInterface>PositionJointInterface</hardwareInterface>
+      </joint>
+
+      <actuator name="motor_{count}">
+        <hardwareInterface>PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+
+    </transmission>
+
+</xacro:macro> 
+
+</robot> 

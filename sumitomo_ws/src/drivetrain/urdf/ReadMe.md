@@ -12,3 +12,8 @@ A file that contains information about the robot physical structure. Remember us
 
 ## Minor dependencies:
 * If you haven't, install `sudo apt-get install liburdfdom-tools`
+
+## Remeber:
+* URDF and, on it's own xml files are not that modular, which goes against all of the coding principles! 
+* Xacros are the default when it comes to implementing modules, parameters, and even math into XML files
+* It's a good idea to also separate your xacros, make them readable
