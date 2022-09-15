@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+
+<launch>
+    <!-- === Arguments ===-->
+    <arg name="model" />
+
+    <!-- === Launch ROS nodes === -->
+    <!-- Load robot description -->
+        <!-- Note: This loads the URDF of the robot -->
+    <param name="robot_description" textfile="$(find drivetrain)/urdf/simple_agv.urdf" />
+
+    <!-- Load robot joint state publisher -->
+        <!-- Note: Reads the robot model description, finds all of the joints, and publishes joint 
+        values to all of the nonfixed joints. Different sources for the values of each joint are also available.
+        Along with a GUI to visualize and intreact with the robot.
+        -->
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+    
+    <!-- Load robot state publisher -->
+        <!--Note: This package reads the current robot joint states and publishes the 3D poses 
+        of each robot link using the kinematics tree built from the URDF. 
+        The 3D pose of the robot is published as the tf (transform) ROS. 
+        The tf ROS publishes the relationship between the coordinate frames of a robot. 
+        
+        convert joint states to TF transforms for rviz, etc -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- Load rviz configuration -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen"/> -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find drivetrain)/spawn_simple.rviz" required="true" />
+
+    <!-- TODO: Remebber to make a node that transforms from the world frame to the base link-->
+</launch>
