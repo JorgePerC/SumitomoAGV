@@ -10,10 +10,17 @@ project(drivetrain)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  # CANBus dependencies
   can_msgs
   canopen_chain_node
   nodelet
   pluginlib
+  # Simulation dependencies
+  urdf 
+  rviz 
+  xacro
+  tf
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions

@@ -50,27 +50,50 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
 
+  <!-- ===== build_depend ===== -->
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
+
   <build_depend>can_msgs</build_depend>
   <build_depend>canopen_chain_node</build_depend>
   <build_depend>nodelet</build_depend>  
   <build_depend>pluginlib</build_depend>  
   
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+  
+  <!-- ===== build_export_depend ===== -->
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
+  
   <build_export_depend>can_msgs</build_export_depend>
   <build_export_depend>canopen_chain_node</build_export_depend>
   <build_export_depend>nodelet</build_export_depend>
   <build_export_depend>pluginlib</build_export_depend>
 
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>rviz</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <build_export_depend>urdf</build_export_depend>
+  <build_export_depend>xacro</build_export_depend>
+
+  <!-- ===== exec_depend ===== -->
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  
   <exec_depend>can_msgs</exec_depend>
   <exec_depend>canopen_chain_node</exec_depend>
   <exec_depend>nodelet</exec_depend>
   <exec_depend>pluginlib</exec_depend>
 
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
