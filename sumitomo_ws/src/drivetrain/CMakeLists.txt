@@ -114,8 +114,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES drivetrain
-#  CATKIN_DEPENDS roscpp std_msgs
+  LIBRARIES drivetrain
+  CATKIN_DEPENDS roscpp std_msgs
 #  DEPENDS system_lib
 )
 
@@ -238,6 +238,10 @@ add_executable(drivetrain src/Drivetrain.cpp)
 # Link executables to the appropriate libraries  
                     # Node name # Library
 target_link_libraries(drivetrain ${catkin_LIBRARIES})
+  if(catkin_EXPORTED_LIBRARIES)
+    add_dependencies(drivetrain ${catkin_EXPORTED_LIBRARIES})
+  endif()
+
 #add_dependencies(talker drivetrain)
 
 # add_executable(drivetrain src/SumitomoDrive.cpp)
