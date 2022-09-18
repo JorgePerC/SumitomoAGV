@@ -7,7 +7,10 @@
     <!-- === Launch ROS nodes === -->
     <!-- Load robot description -->
         <!-- Note: This loads the URDF of the robot -->
-    <param name="robot_description" textfile="$(find drivetrain)/urdf/simple_agv.urdf" />
+    <!-- <param name="robot_description" textfile="$(find drivetrain)/urdf/robot.urdf" /> -->
+        <!-- Note: This converts from xacro to URDF of the robot -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find drivetrain)/urdf/simple_agv.xacro"  /> 
+
 
     <!-- Load robot joint state publisher -->
         <!-- Note: Reads the robot model description, finds all of the joints, and publishes joint 

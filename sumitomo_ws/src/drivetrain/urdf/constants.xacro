@@ -9,6 +9,8 @@
 
 <xacro:property name="wheel_base" value="0.10"/>
 <xacro:property name="wheel_radio" value="${base_height/2}"/>
+<!-- TODO: Correct the caster_rad value -->
+<xacro:property name="caster_rad" value="${wheel_radio}"/>
 
 <xacro:property name="trans_ratio" value="1"/>
 <!--Note: The direction should be signaled with as (1 || -1) -->

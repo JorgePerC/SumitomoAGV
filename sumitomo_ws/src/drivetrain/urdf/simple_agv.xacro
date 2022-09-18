@@ -1,0 +1,51 @@
+<?xml version="1.0"?> 
+<!-- ===== Initial differential robot URDF =====-->
+<!-- Note: This is only for testing pourpuses of the
+CAN communication programs we develop.-->
+
+<robot name="simple_agv" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Include constants xacro -->
+    <xacro:include filename="$(find drivetrain)/urdf/constants.xacro"/>
+    <xacro:include filename="$(find drivetrain)/urdf/parts.xacro"/>
+
+
+    <!-- === Link declaration === -->
+
+    <!-- Base link -->
+    <link name="map">
+        <pose>0 0 0 0 0 0</pose>
+    </link>
+
+    <!-- Simple link definition-->
+    <!-- I'll use chassis as my root link-->    
+    <!-- Note: The origin is relative to the link.
+        it'll usually be 0, because displacement
+        will happen on the Joint-->
+    <link name="chassis">
+        <visual>
+            <geometry>
+                <box size="0.65 0.5 0.3"/>
+            </geometry>
+            <origin xyz="0 0 0.3"/>
+            <material name="white">
+                <color rgba="0 0 1 1"/>
+            </material>
+        </visual>
+    </link>
+    
+    <!-- === Joint definition === -->
+
+    <!-- Reference frame -->
+    <joint name="map_to_chassis" type="fixed">
+        <parent link="map"/>
+        <child link="chassis"/>
+    </joint>
+
+    <!-- Wheels -->
+    <!-- Links with macros. It creates links, joints and transmmissions-->
+    <xacro:wheel_block side="right" invert = "1" parent_link = "chassis"/>
+    <xacro:wheel_block side="left" invert = "-1" parent_link = "chassis"/>
+    
+
+    
+  </robot>
