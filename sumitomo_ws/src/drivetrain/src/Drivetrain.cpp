@@ -1,13 +1,17 @@
 #include <ros/ros.h>
 #include <stdlib.h>
 
-// Import Messages, TODO: add them to the Cmakelist.txt
 #include "std_msgs/String.h"
 #include <geometry_msgs/Twist.h>
 
 // ++Plugin imports
 #include <boost/shared_ptr.hpp> 
+#include <pluginlib/class_list_macros.h>
 
+// ROS Control imports
+#include <controller_manager/controller_manager.h>
+#include <controller_interface/controller.h>
+#include <hardware_interface/joint_command_interface.h>
 //#include "SumitomoDrive.h"
 
 int main(int argc, char *argv[])
