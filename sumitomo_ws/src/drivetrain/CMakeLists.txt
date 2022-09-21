@@ -21,6 +21,7 @@ find_package(catkin REQUIRED COMPONENTS
   xacro
   tf
   geometry_msgs
+  gazebo
 )
 
 ## System dependencies are found with CMake's conventions

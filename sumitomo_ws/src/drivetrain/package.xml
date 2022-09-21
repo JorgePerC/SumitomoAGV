@@ -64,6 +64,12 @@
   <build_depend>tf</build_depend>
   <build_depend>urdf</build_depend>
   <build_depend>xacro</build_depend>
+
+  <!-- ROS Control -->
+  <build_depend>controller_manager</build_depend>
+  <build_depend>joint_state_controller</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+    
   
   <!-- ===== build_export_depend ===== -->
   <build_export_depend>roscpp</build_export_depend>
@@ -80,6 +86,11 @@
   <build_export_depend>urdf</build_export_depend>
   <build_export_depend>xacro</build_export_depend>
 
+  <!-- ROS Control -->
+  <build_export_depend>controller_manager</build_export_depend>
+  <build_export_depend>joint_state_controller</build_export_depend>
+  <build_export_depend>robot_state_publisher</build_export_depend>
+
   <!-- ===== exec_depend ===== -->
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
@@ -94,6 +105,11 @@
   <exec_depend>tf</exec_depend>
   <exec_depend>urdf</exec_depend>
   <exec_depend>xacro</exec_depend>
+
+ <!-- ROS Control -->
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
