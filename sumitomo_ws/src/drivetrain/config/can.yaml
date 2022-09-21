@@ -11,7 +11,7 @@ sync:
   overflow: 0 # overflow sync counter at value or do not set it (0, default)
   # heartbeat: # simple heartbeat producer, optional!
   # rate: 20 # heartbeat rate
-  msg: "77f#05" # message to send, cansend format: heartbeat of node 127 with status 5=Started
+  # msg: "77f#05" # message to send, cansend format: heartbeat of node 127 with status 5=Started
 
 # ===== Node Layer =====
 nodes:
@@ -21,12 +21,13 @@ nodes:
     eds_file: "/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/src/drivetrain/config/smartris.eds"
 
 # ===== Nodes default =====
+  # == Used for canopen_motor_node, previously declared ==
 
   defaults: # optional, all defaults can be overwritten per node
     # canopen_chain_node settings ..
     motor_allocator: canopen::Motor402::Allocator # select allocator for motor layer
     motor_layer: settings passed to motor layer (plugin-specific)
-      switching_state: 4 # (Operation_Enable), state for mode switching | It may be 3
+      switching_state: 3 # (Operation_Enable), state for mode switching | It may be 4
     # pos_to_device: "rint(rad2deg(pos)*1000)" # rad -> mdeg
     # pos_from_device: "deg2rad(obj6064)/1000" # actual position [mdeg] -> rad
     # vel_to_device: "rint(rad2deg(vel)*1000)" # rad/s -> mdeg/s
