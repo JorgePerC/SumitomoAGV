@@ -1,16 +1,23 @@
 <?xml version="1.0" ?>
 
 <launch>
-    <!-- === Arguments ===-->
+    <!-- ===== Arguments =====-->
     <arg name="model" />
+    
+    <!-- ===== Add .yamls to the parameter server ===== -->
 
-    <!-- === Launch ROS nodes === -->
     <!-- Load robot description -->
-        <!-- Note: This loads the URDF of the robot -->
-    <!-- <param name="robot_description" textfile="$(find drivetrain)/urdf/robot.urdf" /> -->
-        <!-- Note: This converts from xacro to URDF of the robot -->
+    <!-- Note: This loads the URDF of the robot -->
+        <!-- <param name="robot_description" textfile="$(find drivetrain)/urdf/robot.urdf" /> -->
+    <!-- Note: This converts from xacro to URDF of the robot -->
     <param name="robot_description" command="$(find xacro)/xacro $(find drivetrain)/urdf/simple_agv.xacro"  /> 
 
+    <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam command="load" file="$(find drivetrain)/config/diff_robot_controller.yaml"/>
+
+    <!-- Load parameters into ROS Param Server
+    <rosparam command="load" file="$(find drivetrain)/config/diff_robot_controller.yaml"/> -->
+    <!-- ===== Launch ROS nodes ===== -->
 
     <!-- Load robot joint state publisher -->
         <!-- Note: Reads the robot model description, finds all of the joints, and publishes joint 
@@ -24,13 +31,32 @@
         of each robot link using the kinematics tree built from the URDF. 
         The 3D pose of the robot is published as the tf (transform) ROS. 
         The tf ROS publishes the relationship between the coordinate frames of a robot. 
-        
         convert joint states to TF transforms for rviz, etc -->
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+        <!-- Note: The following also connects the robot state publisher to Gazebo -->
+        <!-- <remap from="/joint_states" to="/drivetrain/joint_states" /> -->
+    </node>
 
     <!-- Load rviz configuration -->
     <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen"/> -->
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find drivetrain)/spawn_simple.rviz" required="true" />
 
+    <!-- load the controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" ns="/drivetrain" args="joint1_position_controller 
+                                            joint2_position_controller 
+                                            joint_state_controller"/>
+
+
     <!-- TODO: Remebber to make a node that transforms from the world frame to the base link-->
+
+
+
+
+    <!-- ===== Load Gazebo plugin ===== -->
+    <!-- <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+        <robotNamespace>/drivetrain</robotNamespace>
+    </plugin>
+    </gazebo> -->
 </launch>
