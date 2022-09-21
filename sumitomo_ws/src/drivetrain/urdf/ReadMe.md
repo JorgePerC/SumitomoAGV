@@ -19,5 +19,10 @@ A file that contains information about the robot physical structure. Remember us
 * URDF and, on it's own xml files are not that modular, which goes against all of the coding principles! 
 * Xacros are the default when it comes to implementing modules, parameters, and even math into XML files
 * It's a good idea to also separate your xacros, make them readable
-* If you try to implement a **URDF** file with macros, you'll successfully fail. Tho, you can convert the xacro URDF-ish to a real URDF with the command `rosrun xacro pan_tilt.xacro > pan_tilt_generated.urdf` 
+* If you try to implement a **URDF** file with macros, you'll successfully fail. Tho, you can convert the xacro URDF-ish to a real URDF with the command `rosrun xacro xacro pan_tilt.xacro > pan_tilt_generated.urdf` 
     * Alternatively, add it to your build
+
+## ROS Control
+
+If you would like to use a ROS controller, it should be enough to add transmission into the robot's URDF file, however, I recommend using Gazebo_ROS_Control because it has more [documentation](https://classic.gazebosim.org/tutorials?tut=ros_control&cat=connect_ros) on it. 
+    

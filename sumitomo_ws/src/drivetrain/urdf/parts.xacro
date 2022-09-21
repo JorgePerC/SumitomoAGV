@@ -46,7 +46,7 @@
         <hardwareInterface> hardware_interface/EffortJointInterface </hardwareInterface>
       </joint>
       <!-- Actuator -->
-      <actuator name="motor_{side}">
+      <actuator name="motor_${side}">
         <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
