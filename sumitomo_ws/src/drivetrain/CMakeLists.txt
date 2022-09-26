@@ -15,13 +15,17 @@ find_package(catkin REQUIRED COMPONENTS
   canopen_chain_node
   nodelet
   pluginlib
+  # Control dependencies
+  controller_manager
+  joint_state_controller
+  robot_state_publisher
   # Simulation dependencies
   urdf 
   rviz 
   xacro
   tf
   geometry_msgs
-  gazebo
+  #gazebo
 )
 
 ## System dependencies are found with CMake's conventions
@@ -129,7 +133,17 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+# Find Gazebo 
+  # ${GAZEBO_INCLUDE_DIRS}
 )
+
+# ++ Find Gazebo
+# link_directories(${GAZEBO_LIBRARY_DIRS})
+
+# set(GAZEBOINCLUDEDIRS /usr/include;/usr/include/gazebo-4.1;/usr/include/sdformat-2.2) 
+# set(GAZEBOLIBRARYDIRS /usr/lib/x8664-linux-gnu;/usr/lib/x8664-linux-gnu/gazebo-4.1/plugins)
+
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

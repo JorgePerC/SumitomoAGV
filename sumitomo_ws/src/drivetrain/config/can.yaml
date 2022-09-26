@@ -1,5 +1,5 @@
 # ===== Bus configuration =====
-  # Note : it should already be runnnig
+# Note : it should already be runnnig
 bus:
   driver_plugin: can::SocketCANInterface
   device: can0 # SocketCAN network interface
@@ -7,30 +7,32 @@ bus:
   master_allocator: canopen::SimpleMaster::Allocator
 sync:
   interval_ms: 100 # 10 ms is recommended for non real-time systems, set to 0 to disable sync
-#  update_ms: <interval_ms> # Update interval of control loop, must be set explicitly if sync is disabled
+  #  update_ms: <interval_ms> # Update interval of control loop, must be set explicitly if sync is disabled
   overflow: 0 # overflow sync counter at value or do not set it (0, default)
   # heartbeat: # simple heartbeat producer, optional!
   # rate: 20 # heartbeat rate
   # msg: "77f#05" # message to send, cansend format: heartbeat of node 127 with status 5=Started
 
+# ===== Nodes default =====
+# == Used for canopen_motor_node, previously declared ==
+
+defaults: # optional, all defaults can be overwritten per node
+  # canopen_chain_node settings ..
+  motor_allocator: canopen::Motor402::Allocator # select allocator for motor layer
+  # motor_layer: settings passed to motor layer (plugin-specific)
+  #   switching_state: 3 # (Operation_Enable), state for mode switching | It may be 4
+  # pos_to_device: "rint(rad2deg(pos)*1000)" # rad -> mdeg
+  # pos_from_device: "deg2rad(obj6064)/1000" # actual position [mdeg] -> rad
+  # vel_to_device: "rint(rad2deg(vel)*1000)" # rad/s -> mdeg/s
+  # vel_from_device: "deg2rad(obj606C)/1000" # actual velocity [mdeg/s] -> rad/s
+  # eff_to_device: "rint(eff)" # just round to integer
+  # eff_from_device: "0" # unset
+
 # ===== Node Layer =====
 nodes:
-  - name: motorRight
-    id: 1
-    # Note: this is a full path, change it to yours
-    eds_file: "/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/src/drivetrain/config/smartris.eds"
+  node1:
+    name: motorRight
+    id: 2
+    eds_file: "/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/src/drivetrain/config/smartris.eds" # Note: this is a full path, change it to yours
 
-# ===== Nodes default =====
-  # == Used for canopen_motor_node, previously declared ==
 
-  defaults: # optional, all defaults can be overwritten per node
-    # canopen_chain_node settings ..
-    motor_allocator: canopen::Motor402::Allocator # select allocator for motor layer
-    motor_layer: settings passed to motor layer (plugin-specific)
-      switching_state: 3 # (Operation_Enable), state for mode switching | It may be 4
-    # pos_to_device: "rint(rad2deg(pos)*1000)" # rad -> mdeg
-    # pos_from_device: "deg2rad(obj6064)/1000" # actual position [mdeg] -> rad
-    # vel_to_device: "rint(rad2deg(vel)*1000)" # rad/s -> mdeg/s
-    # vel_from_device: "deg2rad(obj606C)/1000" # actual velocity [mdeg/s] -> rad/s
-    # eff_to_device: "rint(eff)" # just round to integer
-    # eff_from_device: "0" # unset
