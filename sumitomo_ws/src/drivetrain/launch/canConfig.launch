@@ -2,12 +2,16 @@
 
 <launch> <!-- Root tag for launch files -->
     <!-- ===== Arguments ===== -->
-    <arg name="CAN_config" value="$(find drivetrain)/config/can.yaml"/>
+    <arg name="CAN_config" value="$(find drivetrain)/config/can_bus.yaml"/>
+    <arg name="CAN_controller" value="$(find drivetrain)/config/can_motor_controller.yaml"/>
+    <arg name="CAN_nodes" value="$(find drivetrain)/config/motror_nodes.yaml"/>
  
     <!-- ===== Launch ROS nodes ===== -->
     <!-- Load CAN configuration node (file) -->
     <node name="canopen_chain" pkg="canopen_chain_node" type="canopen_chain_node" output="screen" clear_params="true">
         <rosparam command="load" file="$(arg CAN_config)" />
+        <rosparam command="load" file="$(arg CAN_controller)" />
+        <rosparam command="load" file="$(arg CAN_nodes)" />
     </node>
 
     <!-- Start nodelet manager 
