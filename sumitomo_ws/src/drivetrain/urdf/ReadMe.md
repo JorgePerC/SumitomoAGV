@@ -21,6 +21,7 @@ A file that contains information about the robot physical structure. Remember us
 * It's a good idea to also separate your xacros, make them readable
 * If you try to implement a **URDF** file with macros, you'll successfully fail. Tho, you can convert the xacro URDF-ish to a real URDF with the command `rosrun xacro xacro pan_tilt.xacro > pan_tilt_generated.urdf` 
     * Alternatively, add it to your build
+    * NOTE: Before running the command, source devel/setup.bash
 
 ## ROS Control
 

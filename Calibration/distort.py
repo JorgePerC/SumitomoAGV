@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-cam = cv2.VideoCapture(1)
+cam = cv2.VideoCapture(0)
 
 rest,frame = cam.read()
 # -- correct barrel distortion from camera --
