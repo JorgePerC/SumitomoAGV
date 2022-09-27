@@ -1,0 +1,14 @@
+# ===== Bus configuration =====
+# Note : it should already be runnnig
+bus:
+  driver_plugin: can::SocketCANInterface
+  device: can0 # SocketCAN network interface
+  loopback: false # Make the SocketCAN loop back messages
+  master_allocator: canopen::SimpleMaster::Allocator
+sync:
+  interval_ms: 100 # 10 ms is recommended for non real-time systems, set to 0 to disable sync
+  #  update_ms: <interval_ms> # Update interval of control loop, must be set explicitly if sync is disabled
+  overflow: 0 # overflow sync counter at value or do not set it (0, default)
+heartbeat: # simple heartbeat producer, optional!
+  rate: 20 # heartbeat rate
+  msg: "77f#05" # message to send, cansend format: heartbeat of node 127 with status 5=Started

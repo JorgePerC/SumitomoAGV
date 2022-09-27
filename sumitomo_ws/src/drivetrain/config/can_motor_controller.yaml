@@ -1,12 +1,16 @@
 # This will be loaded into the ROS Parameter Server
 # Contains details about the ros_control interfaces
 
+
+# List all of the URDF file joints
+#joint_names: [joint_wheel_right, joint_wheel_left]
+
 drivetrain: # This should be the namespace 
 
   # ===== Publish all joint states =====
   joint_state_controller:
     type: joint_state_controller/JointStateController
-    publish_rate: 50   
+    publish_rate: 50
 
   # ===== Position Controllers for each wheel =====
     # These shall be the same as in your URDF file 
@@ -16,8 +20,10 @@ drivetrain: # This should be the namespace
     type: position_controllers/EffortJointInterface
     joint: joint_wheel_right
     pid: {p: 100.0, i: 0.01, d: 10.0} 
+    required_drive_mode: 2 # For velocity control CAN_402 || http://wiki.ros.org/canopen_402
   
   joint2_position_controller:
     type: position_controllers/EffortJointInterface
     joint: joint_wheel_left
     pid: {p: 100.0, i: 0.01, d: 10.0} 
+    required_drive_mode: 2
