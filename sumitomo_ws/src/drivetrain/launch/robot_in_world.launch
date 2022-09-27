@@ -13,7 +13,7 @@
     <param name="robot_description" command="$(find xacro)/xacro $(find drivetrain)/urdf/simple_agv.xacro"  /> 
 
     <!-- Load joint controller configurations from YAML file to parameter server -->
-    <rosparam command="load" file="$(find drivetrain)/config/diff_robot_controller.yaml"/>
+    <rosparam command="load" file="$(find drivetrain)/config/can_motor_controller.yaml"/>
 
     <!-- Load parameters into ROS Param Server
     <rosparam command="load" file="$(find drivetrain)/config/diff_robot_controller.yaml"/> -->
@@ -49,9 +49,6 @@
 
 
     <!-- TODO: Remebber to make a node that transforms from the world frame to the base link-->
-
-
-
 
     <!-- ===== Load Gazebo plugin ===== -->
     <!-- <gazebo>

@@ -4,7 +4,7 @@
     <!-- ===== Arguments ===== -->
     <arg name="CAN_config" value="$(find drivetrain)/config/can_bus.yaml"/>
     <arg name="CAN_controller" value="$(find drivetrain)/config/can_motor_controller.yaml"/>
-    <arg name="CAN_nodes" value="$(find drivetrain)/config/motror_nodes.yaml"/>
+    <arg name="CAN_nodes" value="$(find drivetrain)/config/motor_nodes.yaml"/>
  
     <!-- ===== Launch ROS nodes ===== -->
     <!-- Load CAN configuration node (file) -->
