@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
   xacro
   tf
   geometry_msgs
-  #gazebo
+  gazebo_ros
 )
 
 ## System dependencies are found with CMake's conventions
@@ -119,8 +119,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-  LIBRARIES drivetrain
-  CATKIN_DEPENDS roscpp std_msgs
+  LIBRARIES ${PROJECT_NAME} # aka drivetrain
+  CATKIN_DEPENDS 
+    roscpp 
+    std_msgs
 #  DEPENDS system_lib
 )
 
@@ -134,12 +136,13 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 # Find Gazebo 
-  # ${GAZEBO_INCLUDE_DIRS}
+  ${GAZEBO_INCLUDE_DIRS}
 )
 
 # ++ Find Gazebo
-# link_directories(${GAZEBO_LIBRARY_DIRS})
+link_directories(${GAZEBO_LIBRARY_DIRS})
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 # set(GAZEBOINCLUDEDIRS /usr/include;/usr/include/gazebo-4.1;/usr/include/sdformat-2.2) 
 # set(GAZEBOLIBRARYDIRS /usr/lib/x8664-linux-gnu;/usr/lib/x8664-linux-gnu/gazebo-4.1/plugins)
 
@@ -235,12 +238,18 @@ include_directories(
 # NOTE: This is similar to adding a library
 
 # add_library(drivetrain_nodelet src/drivetrain_nodelet.cpp)
-add_library(Smartris
-  src/SumitomoDrive.cpp
+add_library(${PROJECT_NAME} #Instead of writing "Smartris"
+  src/gzbo_world_plugin.cpp
 )
 # Specify libraries to link a library or executable target against
 target_link_libraries(
-  Smartris ${catkin_LIBRARIES}
+  # Compilation
+  ${catkin_LIBRARIES}
+  # Project name (Nodelet)
+  ${PROJECT_NAME}  
+  # Gazebo
+  ${GAZEBO_LIBRARIES}
+  
 ) 
 
 ##################
@@ -261,3 +270,14 @@ target_link_libraries(drivetrain ${catkin_LIBRARIES})
 
 # add_executable(drivetrain src/SumitomoDrive.cpp)
 # target_link_libraries(motorRight ${catkin_LIBRARIES})
+
+
+# === IDK ===
+
+# install(TARGETS ${PROJECT_NAME}
+#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# )
+# install(DIRECTORY launch
+#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})

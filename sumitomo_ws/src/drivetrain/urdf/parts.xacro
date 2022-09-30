@@ -20,7 +20,7 @@
         <origin xyz= "0 0 0" rpy="${pi/2} 0 0"/>
         
         <material name="black">
-          <color rgba="0 0 0 1"/>
+          <color rgba="0 0 0 0.5"/>
         </material>
       </visual>
     </link>

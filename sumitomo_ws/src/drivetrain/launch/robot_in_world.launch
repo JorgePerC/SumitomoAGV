@@ -2,7 +2,10 @@
 
 <launch>
     <!-- ===== Arguments =====-->
-    <arg name="model" />
+    <arg name="rviz_config" value="$(find drivetrain)/spawn_simple.rviz"/>
+    <arg name="CAN_config" value="$(find drivetrain)/config/can_bus.yaml"/>
+    <arg name="CAN_controller" value="$(find drivetrain)/config/can_motor_controller.yaml"/>
+    <arg name="CAN_nodes" value="$(find drivetrain)/config/motor_nodes.yaml"/>
     
     <!-- ===== Add .yamls to the parameter server ===== -->
 
@@ -13,11 +16,18 @@
     <param name="robot_description" command="$(find xacro)/xacro $(find drivetrain)/urdf/simple_agv.xacro"  /> 
 
     <!-- Load joint controller configurations from YAML file to parameter server -->
-    <rosparam command="load" file="$(find drivetrain)/config/can_motor_controller.yaml"/>
+    <!-- <rosparam command="load" file="$(arg CAN_controller)"/> -->
 
     <!-- Load parameters into ROS Param Server
     <rosparam command="load" file="$(find drivetrain)/config/diff_robot_controller.yaml"/> -->
+
     <!-- ===== Launch ROS nodes ===== -->
+        <!-- Load CAN configuration node (file) -->
+    <node name="canopen_chain" pkg="canopen_chain_node" type="canopen_chain_node" output="screen" clear_params="true">
+        <rosparam command="load" file="$(arg CAN_config)" />
+        <rosparam command="load" file="$(arg CAN_controller)" />
+        <rosparam command="load" file="$(arg CAN_nodes)" />
+    </node>
 
     <!-- Load robot joint state publisher -->
         <!-- Note: Reads the robot model description, finds all of the joints, and publishes joint 
@@ -39,7 +49,7 @@
 
     <!-- Load rviz configuration -->
     <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen"/> -->
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find drivetrain)/spawn_simple.rviz" required="true" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" required="true" />
 
     <!-- load the controllers -->
     <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
