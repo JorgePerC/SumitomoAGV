@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bitrate=1000000
+bitrate=500000
 echo "Setting CAN bus Up"
 
 echo "Bitrate is: $bitrate"
