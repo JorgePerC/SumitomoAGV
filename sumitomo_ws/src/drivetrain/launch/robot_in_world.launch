@@ -12,16 +12,13 @@
     <!-- ===== Add .yamls to the parameter server ===== -->
 
     <!-- Load robot description -->
-    <!-- Note: This loads the URDF of the robot -->
-        <!-- <param name="robot_description" textfile="$(find drivetrain)/urdf/robot.urdf" /> -->
-    <!-- Note: This converts from xacro to URDF of the robot -->
+        <!-- Note: This loads the URDF of the robot -->
+    <!-- <param name="robot_description" textfile="$(find drivetrain)/urdf/robot.urdf" /> -->
+        <!-- Note: This converts from xacro to URDF of the robot -->
     <param name="robot_description" command="$(find xacro)/xacro $(find drivetrain)/urdf/simple_agv.xacro"  /> 
 
     <!-- Load joint controller configurations from YAML file to parameter server -->
     <!-- <rosparam command="load" file="$(arg CAN_controller)"/> -->
-
-    <!-- Load parameters into ROS Param Server
-    <rosparam command="load" file="$(find drivetrain)/config/diff_robot_controller.yaml"/> -->
 
     <!-- ===== Launch ROS nodes ===== -->
         <!-- Load CAN configuration node (file) -->

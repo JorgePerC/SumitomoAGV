@@ -123,6 +123,8 @@ catkin_package(
   CATKIN_DEPENDS 
     roscpp 
     std_msgs
+
+    canopen_chain_node
 #  DEPENDS system_lib
 )
 
@@ -238,15 +240,16 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 # NOTE: This is similar to adding a library
 
 # add_library(drivetrain_nodelet src/drivetrain_nodelet.cpp)
-add_library(${PROJECT_NAME} #Instead of writing "Smartris"
+add_library(${PROJECT_NAME}_node #Instead of writing "Smartris"
   src/gzbo_world_plugin.cpp
 )
 # Specify libraries to link a library or executable target against
 target_link_libraries(
-  # Compilation
+  ${PROJECT_NAME}_node    
+# Compilation
   ${catkin_LIBRARIES}
   # Project name (Nodelet)
-  ${PROJECT_NAME}  
+  
   # Gazebo
   # ${GAZEBO_LIBRARIES}
   
@@ -258,13 +261,13 @@ target_link_libraries(
 
 ## Declare a C++ executable
               # Package   # Node executable
-add_executable(drivetrain src/Drivetrain.cpp)
-# Link executables to the appropriate libraries  
-                    # Node name # Library
-target_link_libraries(drivetrain ${catkin_LIBRARIES})
-  if(catkin_EXPORTED_LIBRARIES)
-    add_dependencies(drivetrain ${catkin_EXPORTED_LIBRARIES})
-  endif()
+# add_executable(drivetrain src/Drivetrain.cpp)
+# # Link executables to the appropriate libraries  
+#                     # Node name # Library
+# target_link_libraries(drivetrain ${catkin_LIBRARIES})
+#   if(catkin_EXPORTED_LIBRARIES)
+#     add_dependencies(drivetrain ${catkin_EXPORTED_LIBRARIES})
+#   endif()
 
 #add_dependencies(talker drivetrain)
 

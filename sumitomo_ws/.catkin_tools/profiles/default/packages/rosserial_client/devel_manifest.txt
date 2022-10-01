@@ -1,0 +1,6 @@
+rosserial/rosserial_client
+/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/.private/rosserial_client/cmake.lock /home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/./cmake.lock
+/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/.private/rosserial_client/lib/python2.7/dist-packages/rosserial_client/__init__.py /home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/lib/python2.7/dist-packages/rosserial_client/__init__.py
+/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/.private/rosserial_client/lib/pkgconfig/rosserial_client.pc /home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/lib/pkgconfig/rosserial_client.pc
+/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/.private/rosserial_client/share/rosserial_client/cmake/rosserial_clientConfig-version.cmake /home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/share/rosserial_client/cmake/rosserial_clientConfig-version.cmake
+/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/.private/rosserial_client/share/rosserial_client/cmake/rosserial_clientConfig.cmake /home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/devel/share/rosserial_client/cmake/rosserial_clientConfig.cmake

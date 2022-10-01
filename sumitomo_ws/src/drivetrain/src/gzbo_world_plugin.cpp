@@ -1,4 +1,4 @@
-#include <gazebo/common/Plugin.hh>
+#include <gazebo/common/Plugin.h>
 #include <ros/ros.h>
 
 namespace gazebo
