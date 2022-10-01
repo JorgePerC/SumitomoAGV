@@ -248,7 +248,7 @@ target_link_libraries(
   # Project name (Nodelet)
   ${PROJECT_NAME}  
   # Gazebo
-  ${GAZEBO_LIBRARIES}
+  # ${GAZEBO_LIBRARIES}
   
 ) 
 

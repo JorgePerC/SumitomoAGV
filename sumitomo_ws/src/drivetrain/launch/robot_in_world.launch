@@ -7,6 +7,8 @@
     <arg name="CAN_controller" value="$(find drivetrain)/config/can_motor_controller.yaml"/>
     <arg name="CAN_nodes" value="$(find drivetrain)/config/motor_nodes.yaml"/>
     
+    <arg name="world_name" default="$(find drivetrain)/world/test"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+
     <!-- ===== Add .yamls to the parameter server ===== -->
 
     <!-- Load robot description -->
@@ -58,12 +60,28 @@
                                             joint_state_controller"/>
 
 
+    <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-urdf -model simple_agv -param robot_description"/> 
+    <!--         robot:name in URDF -->
+
     <!-- TODO: Remebber to make a node that transforms from the world frame to the base link-->
 
     <!-- ===== Load Gazebo plugin ===== -->
-    <!-- <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        <robotNamespace>/drivetrain</robotNamespace>
-    </plugin>
-    </gazebo> -->
+        <!-- set command arguments --> 
+        <arg name="command_arg1" value="-u"/>
+        <arg name="command_arg2" value="-r"/> 
+        <arg name="command_arg3" value="--verbose"/>
+        <arg name="script_type" value="debug"/>
+        <arg name="gui" default="true"/>
+    
+    <!-- start gazebo server-->
+    <node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="false" output="screen"
+	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) $(arg world_name)" />
+	
+    <!-- start gazebo client -->
+    <group if="$(arg gui)">
+        <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
+    </group>
+
 </launch>
