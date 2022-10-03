@@ -64,7 +64,9 @@
   <build_depend>tf</build_depend>
   <build_depend>urdf</build_depend>
   <build_depend>xacro</build_depend>
+  
   <build_depend>gazebo_plugins</build_depend>
+  <build_depend>gazebo_ros</build_depend>
 
   <!-- ROS Control -->
   <build_depend>controller_manager</build_depend>
@@ -86,7 +88,9 @@
   <build_export_depend>tf</build_export_depend>
   <build_export_depend>urdf</build_export_depend>
   <build_export_depend>xacro</build_export_depend>
+  
   <build_export_depend>gazebo_plugins</build_export_depend>
+  <build_export_depend>gazebo_ros</build_export_depend>
 
   <!-- ROS Control -->
   <build_export_depend>controller_manager</build_export_depend>
@@ -107,7 +111,10 @@
   <exec_depend>tf</exec_depend>
   <exec_depend>urdf</exec_depend>
   <exec_depend>xacro</exec_depend>
+
+  
   <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
 
  <!-- ROS Control -->
   <exec_depend>controller_manager</exec_depend>

@@ -25,7 +25,10 @@ find_package(catkin REQUIRED COMPONENTS
   xacro
   tf
   geometry_msgs
+  
+  # Añadir gazebo
   gazebo_ros
+  gazebo_plugins
 )
 
 ## System dependencies are found with CMake's conventions
@@ -121,11 +124,28 @@ catkin_package(
 #  INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME} # aka drivetrain
   CATKIN_DEPENDS 
-    roscpp 
+    roscpp
     std_msgs
-
+    # CANBus dependencies
+    can_msgs
     canopen_chain_node
-#  DEPENDS system_lib
+    nodelet
+    pluginlib
+    # Control dependencies
+    controller_manager
+    joint_state_controller
+    robot_state_publisher
+    # Simulation dependencies
+    urdf 
+    rviz 
+    xacro
+    tf
+    geometry_msgs
+    
+    # Añadir gazebo
+    gazebo_ros
+    gazebo_plugins
+    #  DEPENDS system_lib
 )
 
 ###########
@@ -135,6 +155,8 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
+# package include dirs
+  ${PROJECT_NAME}
 # include
   ${catkin_INCLUDE_DIRS}
 # Find Gazebo 
@@ -143,10 +165,11 @@ include_directories(
 
 # ++ Find Gazebo
 link_directories(${GAZEBO_LIBRARY_DIRS})
+list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
-# set(GAZEBOINCLUDEDIRS /usr/include;/usr/include/gazebo-4.1;/usr/include/sdformat-2.2) 
-# set(GAZEBOLIBRARYDIRS /usr/lib/x8664-linux-gnu;/usr/lib/x8664-linux-gnu/gazebo-4.1/plugins)
+set(GAZEBO_LIBRARIES /usr/include;/usr/include/gazebo-9;/usr/include/sdformat-6.3) 
+set(GAZEBO_INCLUDE_DIRS /usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu/gazebo-9/plugins)
 
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 
@@ -240,19 +263,18 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 # NOTE: This is similar to adding a library
 
 # add_library(drivetrain_nodelet src/drivetrain_nodelet.cpp)
-add_library(${PROJECT_NAME}_node #Instead of writing "Smartris"
+add_library(${PROJECT_NAME} SHARED #Instead of writing "Smartris"
   src/gzbo_world_plugin.cpp
 )
 # Specify libraries to link a library or executable target against
 target_link_libraries(
-  ${PROJECT_NAME}_node    
-# Compilation
-  ${catkin_LIBRARIES}
   # Project name (Nodelet)
-  
+  ${PROJECT_NAME}    
+  # Compilation
+  ${catkin_LIBRARIES}
   # Gazebo
-  # ${GAZEBO_LIBRARIES}
-  
+  ${GAZEBO_LIBRARIES}
+  # ${GAZEBO_INCLUDE_DIRS}
 ) 
 
 ##################
