@@ -33,17 +33,12 @@
             <uri>model://sun</uri>
         </include>
 
-        <include>
-            <uri>model://simple_agv</uri>
-        </include>
-
     </world>
 
-
-
     <gazebo>
-  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-  </plugin>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    </plugin>
+
 </gazebo>
 
 
