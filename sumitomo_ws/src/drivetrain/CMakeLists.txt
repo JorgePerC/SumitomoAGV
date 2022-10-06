@@ -152,6 +152,17 @@ catkin_package(
 ## Build ##
 ###########
 
+# ++ Find Gazebo
+find_package(gazebo REQUIRED)
+list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
+
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
+set(GAZEBO_INCLUDE_DIRS /usr/include;/usr/include/gazebo-9;/usr/include/sdformat-6.3;/usr/include/ignition;/usr/include/ignition/math4;/usr/include/ignition/msgs1;/usr/include/ignition/fuel_tools1;/usr/include/ignition/common1;/usr/include/ignition/transport4) #  
+set(GAZEBO_LIBRARIES /usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu/gazebo-9/plugins)
+
+link_directories(${GAZEBO_INCLUDE_DIRS})
+link_directories(${GAZEBO_LIBRARIES})
+
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
@@ -163,13 +174,7 @@ include_directories(
   ${GAZEBO_INCLUDE_DIRS}
 )
 
-# ++ Find Gazebo
-link_directories(${GAZEBO_LIBRARY_DIRS})
-list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
-set(GAZEBO_LIBRARIES /usr/include;/usr/include/gazebo-9;/usr/include/sdformat-6.3) 
-set(GAZEBO_INCLUDE_DIRS /usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu/gazebo-9/plugins)
 
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 
@@ -274,7 +279,7 @@ target_link_libraries(
   ${catkin_LIBRARIES}
   # Gazebo
   ${GAZEBO_LIBRARIES}
-  # ${GAZEBO_INCLUDE_DIRS}
+  ${GAZEBO_INCLUDE_DIRS}
 ) 
 
 ##################

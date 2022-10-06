@@ -1,5 +1,11 @@
-#include <gazebo/common/Plugin.h>
 #include <ros/ros.h>
+//#include "common/Plugin.hh"
+#include "gazebo/gazebo.hh"
+#include "gazebo/common/common.hh"
+#include "gazebo/physics/physics.hh"
+
+
+
 
 namespace gazebo
 {

@@ -57,10 +57,7 @@
                                             joint_state_controller"/>
 
 
-    <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
-    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-	args="-urdf -model simple_agv -param robot_description"/> 
-    <!--         robot:name in URDF -->
+
 
     <!-- TODO: Remebber to make a node that transforms from the world frame to the base link-->
 
@@ -76,6 +73,13 @@
     <node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="false" output="screen"
 	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) $(arg world_name)" />
 	
+    <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-urdf -model simple_agv -param robot_description"/> 
+    <!--         robot:name in URDF -->
+    
+
+
     <!-- start gazebo client -->
     <group if="$(arg gui)">
         <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
