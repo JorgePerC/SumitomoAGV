@@ -27,7 +27,9 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   
   # Añadir gazebo
-  gazebo_ros
+  gazebo_ros    
+  gazebo_ros_control
+  gazebo_msgs
   gazebo_plugins
 )
 
@@ -144,6 +146,8 @@ catkin_package(
     
     # Añadir gazebo
     gazebo_ros
+    gazebo_ros_control
+    gazebo_msgs
     gazebo_plugins
     #  DEPENDS system_lib
 )
@@ -154,7 +158,7 @@ catkin_package(
 
 # ++ Find Gazebo
 find_package(gazebo REQUIRED)
-list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
+
 
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 set(GAZEBO_INCLUDE_DIRS /usr/include;/usr/include/gazebo-9;/usr/include/sdformat-6.3;/usr/include/ignition;/usr/include/ignition/math4;/usr/include/ignition/msgs1;/usr/include/ignition/fuel_tools1;/usr/include/ignition/common1;/usr/include/ignition/transport4) #  
@@ -162,6 +166,8 @@ set(GAZEBO_LIBRARIES /usr/lib/aarch64-linux-gnu;/usr/lib/aarch64-linux-gnu/gazeb
 
 link_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARIES})
+
+list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
