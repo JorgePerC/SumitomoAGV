@@ -7,7 +7,7 @@
     <arg name="CAN_controller" value="$(find drivetrain)/config/can_motor_controller.yaml"/>
     <arg name="CAN_nodes" value="$(find drivetrain)/config/motor_nodes.yaml"/>
     
-    <arg name="world_name" default="$(find drivetrain)/world/test"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+    <arg name="world_name" default="$(find drivetrain)/world/empty_world.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
 
     <!-- ===== Add .yamls to the parameter server ===== -->
 
