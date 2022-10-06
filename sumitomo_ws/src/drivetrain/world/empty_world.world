@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    
+    <!-- Physics-->
+        <!-- Simulation arguments -->
+    <physics name="1ms" type="ignored">
+        <max_step_size>0.005</max_step_size>
+        <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+        filename="libgz-sim-physics-system.so"
+        name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+        filename="libgz-sim-user-commands-system.so"
+        name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+        filename="libgz-sim-scene-broadcaster-system.so"
+        name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+
+
+    
+    <world name="default">
+
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+            <!-- Global light source -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <include>
+            <uri>model://simple_agv</uri>
+        </include>
+
+    </world>
+
+
+
+    <gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  </plugin>
+</gazebo>
+
+
+</sdf>
