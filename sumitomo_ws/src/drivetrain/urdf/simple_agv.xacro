@@ -31,6 +31,20 @@ CAN communication programs we develop.-->
                 <color rgba="0 0 1 1"/>
             </material>
         </visual>
+
+         <!-- Collission -->
+        <collision>
+            <origin xyz="0 0 0.3"/>
+            <geometry>
+                <box size="0.65 0.5 0.3"/>
+            </geometry>
+        </collision>
+        
+        <!-- Inertial: Requred for Gazebo -->
+        <inertial>
+            <mass value="${wheel_mass}"/>
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+        </inertial> 
     </link>
     
     <!-- === Joint definition === -->
@@ -44,14 +58,20 @@ CAN communication programs we develop.-->
     <!-- Wheels -->
     <!-- Links with macros. It creates links, joints and transmmissions-->
     <xacro:wheel_block side="right" invert = "1" parent_link = "chassis"/>
+
+
     <xacro:wheel_block side="left" invert = "-1" parent_link = "chassis"/>
     
 
     <!-- === Gazebo Plugin === -->
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <robotNamespace>/drivetrain</robotNamespace>
+            <robotNamespace>/</robotNamespace>
         </plugin>
+    </gazebo>
+
+    <gazebo reference="chassis">
+        <material>Gazebo/Orange</material>
     </gazebo>
     
   </robot>

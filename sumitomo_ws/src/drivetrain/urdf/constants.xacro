@@ -8,7 +8,9 @@
 <xacro:property name="base_length" value="0.65"/>
 
 <xacro:property name="wheel_base" value="0.10"/>
-<xacro:property name="wheel_radio" value="${base_height/2}"/>
+<xacro:property name="wheel_radio" value="${base_height/2}"/> 
+<xacro:property name="wheel_mass" value="3"/> 
+
 <!-- TODO: Correct the caster_rad value -->
 <xacro:property name="caster_rad" value="${wheel_radio}"/>
 

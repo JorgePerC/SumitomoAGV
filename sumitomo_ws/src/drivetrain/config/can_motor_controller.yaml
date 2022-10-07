@@ -3,7 +3,7 @@
 
 
 # List all of the URDF file joints
-#joint_names: [joint_wheel_right, joint_wheel_left]
+joint_names: [joint_wheel_right, joint_wheel_left]
 
 drivetrain: # This should be the namespace 
 
