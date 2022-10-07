@@ -1,0 +1,1000 @@
+ 1024  ls /dev/tty1
+ 1025  sudo minicom
+ 1026  minicom
+ 1027  ls /dev/tty1
+ 1028  sudo
+ 1029  sudo minicom
+ 1030  ls /dev/tty1
+ 1031  sudo minicom
+ 1032  ls /dev/tty
+ 1033  /dev/tty1
+ 1034  sudo /dev/tty1
+ 1035  cd ..
+ 1036  sudo /dev/tty1
+ 1037  ls /dev/tty
+ 1038  ls /dev
+ 1039  minicom
+ 1040  ls /dev/tty*
+ 1041  ls /dev/tty
+ 1042  sudo minicom
+ 1043  ifconfig
+ 1044  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1045  cd ..
+ 1046  git pull 
+ 1047  cd sumitomo_ws/
+ 1048  source devel/setup.bash 
+ 1049  roslaunch drivetrain robot_in_world.launch 
+ 1050  catkin_make
+ 1051  rostopic list
+ 1052  rosrun
+ 1053  sudo shutdown now
+ 1054  rosservice list
+ 1055  roscore
+ 1056  cd Documents/SumiyomoAGV/Calibration/
+ 1057  python3 Calibracio.py 
+ 1058  python3 distort.py 
+ 1059  python3 Calibracio.py 
+ 1060  python distort.py 
+ 1061  ifconfig
+ 1062  stty
+ 1063  cat 
+ 1064  cat /dev/tty
+ 1065  ls /dev/tty0
+ 1066  cat /dev/tty0
+ 1067  sudo cat /dev/tty0
+ 1068  ps -a
+ 1069  sudo cat /dev/tty1
+ 1070  ls /dev/tty1
+ 1071  who am i
+ 1072  cd ..
+ 1073  who am i
+ 1074  cat /dev/tty1
+ 1075  sudo cat /dev/tty1
+ 1076  ls
+ 1077  cd SumiyomoAGV/
+ 1078  /dev/tty1
+ 1079  sudo /dev/tty1
+ 1080  sudo cat /dev/tty1
+ 1081  sudo cat /dev/tty0
+ 1082  cat
+ 1083  cat /dev/tty0
+ 1084  sudo cat /dev/tty0
+ 1085  sudo minicom
+ 1086  ifconfig
+ 1087  cat /sys/kernel/gpio
+ 1088  dsmeg
+ 1089  dmesg
+ 1090  ifconfig
+ 1091  dmesg
+ 1092  ls /dev/tty
+ 1093  ls /dev/
+ 1094  sudo apt install screen
+ 1095  screen
+ 1096  ifconfig
+ 1097  apt install
+ 1098  apt list
+ 1099  apt list r
+ 1100  apt list ros
+ 1101  apt install rosserial
+ 1102  apt install rosserial_arduino
+ 1103  sudo apt install rosserial_arduino
+ 1104  screen
+ 1105  sudo apt-get install ros-indigo-rosserial-arduino
+ 1106  sudo apt-get install ros-melodic-rosserial-arduino
+ 1107  sudo apt-get install ros-melodic-rosserial
+ 1108  sudo sh     -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" \
+ 1109          > /etc/apt/sources.list.d/ros-latest.list'
+ 1110  wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+ 1111  sudo apt-get update
+ 1112  sudo pip3 uninstall catkin_tools
+ 1113  sudo apt-get install python3-catkin-tools
+ 1114  catkin clean
+ 1115  cd src/
+ 1116  catkin clean
+ 1117  sudo apt-get uninstall python3-catkin-tools
+ 1118  apt remove python3-catkin-tools
+ 1119  sudo apt remove python3-catkin-tools
+ 1120  sudo pip3 install -U catkin_tools
+ 1121  cd ..
+ 1122  catkin clean
+ 1123  catkin clean --an
+ 1124  catkin clean
+ 1125  cd ../..
+ 1126  ls
+ 1127  cd control_ws/
+ 1128  ls
+ 1129  ls -a
+ 1130  cat .catkin_workspace 
+ 1131  catkin clean
+ 1132  cd ..
+ 1133  cd SumiyomoAGV/sumitomo_ws/
+ 1134  catkin clean sumitomo_ws
+ 1135  rm -rf /home/user/catkin_ws/build/
+ 1136  rm -rf /home/user/catkin_ws/devel/
+ 1137  ls
+ 1138  rm -rf devel/
+ 1139  rm -rf build/
+ 1140  catkin_make
+ 1141  sudo apt-get install gazebo9
+ 1142  sudo apt-get install libgazebo9
+ 1143  sudo apt-get install libgazebo9-dev 
+ 1144  sudo apt-get install gazebo9-plugin-base 
+ 1145  gazebo
+ 1146  gazebo -v
+ 1147  gazebo
+ 1148  sudo apt-get install gazebo9-common 
+ 1149  sudo apt-get install gazebo9-dbg 
+ 1150  sudo apt-get install libgazebo9
+ 1151  which gzserver
+ 1152  catkin_init_workspace 
+ 1153  catkin clean 
+ 1154  cd src/
+ 1155  catkin_init_workspace 
+ 1156  catkin clean
+ 1157  sudo apt-get install ros-melodic-gazebo-ros-pkgs ros-melodic-gazebo-ros-control
+ 1158  rosdep update
+ 1159  rosdep check --from-paths . --ignore-src --rosdistro noetic
+ 1160  rosdep check --from-paths . --ignore-src --rosdistro melodic
+ 1161  sudo apt install ros-melodic-cmake-modules 
+ 1162  cd ..
+ 1163  catkin make
+ 1164  catkin_make
+ 1165  sudo apt install ros-melodic-effort-controllers
+ 1166  sudo apt install ros-melodic-joint-state-controller
+ 1167  catkin_make
+ 1168  sudo apt install ros-shape-msgs
+ 1169  catkin_make
+ 1170  rosdep update
+ 1171  rosdep check --from-paths . --ignore-src --rosdistro melodic
+ 1172  sudo apt-get install python-rosmake
+ 1173  rosdep check --from-paths . --ignore-src --rosdistro melodic
+ 1174  sudo apt-get install ros-melodic-tf2-geometry-msgs 
+ 1175  sudo apt-get install ros-melodic-shape-msgs 
+ 1176  sudo apt-get install ros-melodic-image-transport-plugins 
+ 1177  sudo apt-get install ros-melodic-stereo-msgs 
+ 1178  rosdep check --from-paths . --ignore-src --rosdistro melodic
+ 1179  rosdep install rosmake
+ 1180  rosmake
+ 1181  rosmake -h
+ 1182  catkin_make
+ 1183  source devel/setup.bash 
+ 1184  roslaunch drivetrain canConfig.launch 
+ 1185  cd ..
+ 1186  ls
+ 1187  sudo apt install rosserial
+ 1188  cd ..
+ 1189  sudo apt install rosserial
+ 1190  sudo apt install arduino
+ 1191  ls
+ 1192  apt list
+ 1193  cd Documents
+ 1194  ls
+ 1195  cd SumiyomoAGV/
+ 1196  python Calibracio
+ 1197  python Calibracio.py
+ 1198  ls
+ 1199  cd Calibration/
+ 1200  ls
+ 1201  python Calibracio.py
+ 1202  python Calibracio
+ 1203  python Calibracio.py
+ 1204  cd Documents
+ 1205  ls
+ 1206  cd SumiyomoAGV/
+ 1207  ls
+ 1208  ifconfig
+ 1209  sudo pip3 intall pyserial
+ 1210  sudo pip3 install pyserial
+ 1211  ls
+ 1212  cd sumitomo_ws/
+ 1213  ls
+ 1214  cd src
+ 1215  ls
+ 1216  catkin_create_pkg arduino_serial rospy std_msgs
+ 1217  ls
+ 1218  cd arduino_serial/
+ 1219  nano serial.py
+ 1220  ifconfig
+ 1221  ls
+ 1222  cd ..
+ 1223  ls
+ 1224  cd arduino_serial/
+ 1225  ls
+ 1226  nano serial.py
+ 1227  sudo apt install atom
+ 1228  cd 
+ 1229  ls
+ 1230  cs /Downloads
+ 1231  cd /Downloads
+ 1232  cd Downloads/
+ 1233  ls
+ 1234  cd arduino-ide_nightly-20220926_Linux_64bit/
+ 1235  sudo sh install.sh
+ 1236  ls
+ 1237  cd
+ 1238  cd Downloads/
+ 1239  cd arduino-1.8.19-linuxaarch64/
+ 1240  sudo sh install.sh
+ 1241  ls
+ 1242  cd arduino-1.8.19/
+ 1243  ls
+ 1244  sudo sh install.sh
+ 1245  cd ..
+ 1246  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1247  sudo apt-get install ros-indigo-rosserial-arduino
+ 1248  sudo apt-get install ros-melodic-rosserial-arduino
+ 1249  sudo apt-get install ros-melodic-rosserial
+ 1250  cd src/
+ 1251  cd ..
+ 1252  catkin_make
+ 1253  catkin_make install
+ 1254  catkin_make
+ 1255  ls -l /dev/ttyACM
+ 1256  sudo ls -l /dev/ttyACM
+ 1257  sudo ls -l /dev/ttyS0
+ 1258  chmod +r ls -l /dev/ttyS0
+ 1259  chmod +r /dev/ttyS0
+ 1260  sudo chmod +r /dev/ttyS0
+ 1261  chmod +r ls -l /dev/ttyS0
+ 1262  sudo ls -l /dev/ttyS0
+ 1263  sudo usermod -a -G dialout sumitomo
+ 1264  sudo reboot now
+ 1265  sudo nautilus
+ 1266  rostopic list
+ 1267  rosnode list
+ 1268  rostopic list
+ 1269  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1270  source devel/setup.bash 
+ 1271  rosrun rosserial_arduino make_libraries.py 
+ 1272  rosrun rosserial_arduino make_libraries.py /usr/share/arduino/libraries
+ 1273  sudo
+ 1274  source ~/.bashrc 
+ 1275  rosrun rosserial_arduino make_libraries.py /usr/share/arduino/libraries
+ 1276  roscore
+ 1277  rostopic list
+ 1278  rosservice list
+ 1279  sudo screen /dev/ttyACM0
+ 1280  source devel/setup.bash 
+ 1281  roslaunch drivetrain canConfig.launch 
+ 1282  cd ..
+ 1283  ls
+ 1284  ./canSetUp.sh 
+ 1285  cd sumitomo_ws/
+ 1286  roslaunch drivetrain canConfig.launch 
+ 1287  cd src/drivetrain/
+ 1288  git add .
+ 1289  git commit -m "controller spawning"
+ 1290  git push origin main 
+ 1291  roslaunch drivetrain canConfig.launch 
+ 1292  dsmeg
+ 1293  dmesg
+ 1294  dmesg -1
+ 1295  dmesg
+ 1296  rostopic list
+ 1297  ls -ld /dev/ttyACM0
+ 1298  ls -ld /dev/ttyS0
+ 1299  chmod +r /dev/ttyS0
+ 1300  sudo chmod +r /dev/ttyS0
+ 1301  ls -ld /dev/ttyS0
+ 1302  sudo chowner sumitomo /media/sumitomo
+ 1303  usermod -h
+ 1304  groups
+ 1305  usermod -a -G gpio $USER
+ 1306  usermod -a -G gpio sumitomo
+ 1307  sudo usermod -a -G gpio sumitomo
+ 1308  rosco
+ 1309  roscore
+ 1310  rostopic echo /chatter /
+ 1311  rostopic echo /chatter 
+ 1312  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1313  source devel/setup.bash 
+ 1314  rosrun rosserial_arduino make_libraries.py /usr/share/arduino/libraries
+ 1315  whoami
+ 1316  sudo nautilus 
+ 1317  rosrun rosserial_arduino make_libraries.py /usr/share/arduino/libraries
+ 1318  rosrun rosserial_python serial_node.py /dev/ttyS0
+ 1319  sudo pip3 install queue
+ 1320  sudo pip3 install queuelib
+ 1321  rosrun rosserial_python serial_node.py /dev/ttyS0
+ 1322  sudo pip install queuelib
+ 1323  rosrun rosserial_python serial_node.py /dev/ttyS0
+ 1324  python
+ 1325  rosrun rosserial_python serial_node.py /dev/ttyS0
+ 1326  sudo apt install python-pip
+ 1327  pip install rosserial_python
+ 1328  rosrun rosserial_python serial_node.py _port:=/dev/ttyS0
+ 1329  catkin_make
+ 1330  catkin_make install
+ 1331  rosrun rosserial_python serial_node.py _port:=/dev/ttyS0
+ 1332  rosrun rosserial_python serial_node.py _port:=/dev/ttyAMC0
+ 1333  rosrun rosserial_python serial_node.py _port:=/dev/ttyAMC0 
+ 1334  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1335  ifconfig
+ 1336  rosrun rosserial_arduino make_libraries.py /usr/share/arduino/libraries
+ 1337  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1338  rosdep install --from-paths src --ignore-src -r -y
+ 1339  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1340  sudo pip remove queuelib
+ 1341  sudo pip delete queuelib
+ 1342  sudo pip uninstall queuelib
+ 1343  sudo pip install simple-queue
+ 1344  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1345  sudo pip install queuqlib
+ 1346  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1347  sudo pip install queuelib
+ 1348  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1349  sudo pip uninstall queuelib
+ 1350  sudo pip uninstall simplequeue
+ 1351  sudo pip uninstall simple-queue
+ 1352  rosrun rosserial_python serial_node.py /dev/ttyAMC0 
+ 1353  rosrun rosserial_python serial_node.py /dev/ttyACM0 
+ 1354  rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+ 1355  ifconfig
+ 1356  rosrun rosserial_python serial_node.py /dev/ttyS0 _baud:=57600
+ 1357  rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+ 1358  rostopic list
+ 1359  rosservice list
+ 1360  roscore 
+ 1361  cd Documents
+ 1362  rostopic echo /chatter
+ 1363  ifconfig 
+ 1364  roscore
+ 1365  source devel/setup.bash 
+ 1366  rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+ 1367  source devel/setup.bash 
+ 1368  rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=
+ 1369  rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+ 1370  cd ..
+ 1371  ls
+ 1372  ls -a
+ 1373  nano .gitignore 
+ 1374  git rm -r --cached .
+ 1375  git add .
+ 1376  rospack depends drivetrain
+ 1377  cd src
+ 1378  rospack depends drivetrain
+ 1379  history | grep -i rospack
+ 1380  rospack depends gazebo_dev 
+ 1381  rospack depends gazebo_ros
+ 1382  cd sumitomo_ws/src/drivetrain/
+ 1383  cd urdf/
+ 1384  rosrun xacro xacro simple_agv.xacro > robot.urdf
+ 1385  cd ../../..
+ 1386  source devel/setup.bash 
+ 1387  cd src/drivetrain/urdf/
+ 1388  rosrun xacro xacro simple_agv.xacro > robot.urdf
+ 1389  git add .
+ 1390  git commit -m "update instructions"
+ 1391  cd ,,
+ 1392  cd ..
+ 1393  cd config/
+ 1394  git add .
+ 1395  git config -m "Reordered config files"
+ 1396  git commit -m "Reordered config files"
+ 1397  cd ..
+ 1398  cd launch/
+ 1399  git add .
+ 1400  git commit -m "added new config files"
+ 1401  cd ..
+ 1402  source devel/setup.bash 
+ 1403  roslaunch drivetrain  canConfig.launch 
+ 1404  cd src/drivetrain/launch/
+ 1405  git add .
+ 1406  git commit -m "all spawned"
+ 1407  cd ..
+ 1408  cd config/
+ 1409  git add .
+ 1410  git commit -m "removed several object directories"
+ 1411  cd ..
+ 1412  git push origin main 
+ 1413  cd ../../..
+ 1414  ls
+ 1415  cd pythonCAN/
+ 1416  ls
+ 1417  cat TxRx.py 
+ 1418  cat pycanopen.py.save
+ 1419  cat smartrisOD.eds 
+ 1420  cat test_cann.py 
+ 1421  cd ..
+ 1422  git add .
+ 1423  git commit -m "cleaned ws"
+ 1424  git pull 
+ 1425  git push origin main
+ 1426  git add .
+ 1427  git commit -m "Added arduino node"
+ 1428  git push origin main 
+ 1429  sudo apt install libignition-msgs
+ 1430  sudo apt install libignition-msgs-dev 
+ 1431  sudo apt install libignition-common
+ 1432  sudo apt install libignition-common-dev 
+ 1433  sudo apt install libignition-fuel-tools
+ 1434  sudo apt install libignition-fuel-tools1-*
+ 1435  sudo apt install libignition-math4*
+ 1436  sudo apt install libignition-math4
+ 1437  sudo apt install libignition-math4-dev 
+ 1438  sudo apt install libignition-math4-dbg 
+ 1439  sudo apt install libignition-transport4*
+ 1440  cd
+ 1441  cd ../..
+ 1442  find . -name gazebo*.cmake
+ 1443  sudo find . -name gazebo*.cmake
+ 1444  sudo apt install ros-melodic-gazebo-ros
+ 1445  apt list installed 
+ 1446  apt list --installed 
+ 1447  apt list --installed | grep -i gazebo
+ 1448  apt list ros-melodic-gazebo*
+ 1449  apt list gazebo9*
+ 1450  gazebo --version
+ 1451  dpkg -L gazebo9
+ 1452  dpkg -L gazebo9 | tree
+ 1453  dpkg -L gazebo9 | grep gazebo
+ 1454  sudo find /usr/bin/gazebo-9.19.0 -name gazebo*.cmake
+ 1455  sudo find /usr/share/gazebo -name gazebo*.cmake
+ 1456  sudo find /usr/bin/gazebo -name gazebo*.cmake
+ 1457  cd
+ 1458  cd Downloads/
+ 1459  ls
+ 1460  tar -xvzf gazebo-gazebo9_9.19.0.tar.gz 
+ 1461  ls
+ 1462  sudo find . -name gazebo*.cmake
+ 1463  tar -xvzf gazebo-gazebo11_11.12.0.tar.gz 
+ 1464  ls
+ 1465  sudo find . -name gazebo*.cmake
+ 1466  apt list -- installed | grep ros
+ 1467  apt list --installed | grep ros
+ 1468  apt list --installed | grep ros*controller
+ 1469  apt list --installed | grep -i ros*controller
+ 1470  apt list --installed | grep -i ros*
+ 1471  apt list --installed | grep -i controller
+ 1472  cd ..
+ 1473  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1474  rosdep check drivetrain
+ 1475  source devel/setup.bash 
+ 1476  rosdep check drivetrain
+ 1477  catkin_make
+ 1478  cd /opt/ros/melodic/include
+ 1479  ls
+ 1480  cd ../..
+ 1481  source devel/setup.bash 
+ 1482  roslaunch drivetrain canConfig.launch 
+ 1483  roslaunch drivetrain robot_in_world.launch 
+ 1484  rosservice list
+ 1485  rostopic list
+ 1486  sudo apt-get remove '.*sdformat.*' '.*ignition-.*'
+ 1487  sudo apt-get install build-essential                      cmake          libfreeimage-dev          libtinyxml2-dev          uuid-dev          libgts-dev          libavdevice-dev          libavformat-dev          libavcodec-dev          libswscale-dev          libavutil-dev          libprotoc-dev              libprotobuf-dev
+ 1488  sudo apt-get install build-essential                      cmake          libzip-dev          libjsoncpp-dev          libcurl4-openssl-dev          libyaml-dev
+ 1489  sudo apt-get install build-essential                      cmake                      git                      python
+ 1490  sudo apt-get install build-essential                      cmake          libfreeimage-dev          libtinyxml2-dev          uuid-dev          libgts-dev          libavdevice-dev          libavformat-dev          libavcodec-dev          libswscale-dev          libavutil-dev          libprotoc-dev              libprotobuf-dev
+ 1491  sudo apt-get install build-essential                      cmake                      git                      python                      libboost-system-dev                      libtinyxml-dev                      libxml2-utils                      ruby-dev                      ruby
+ 1492  sudo apt-get install build-essential                      cmake                      git                      libprotoc-dev                      libprotobuf-dev                      protobuf-compiler
+ 1493  sudo apt-get install build-essential                      cmake          libzip-dev          libjsoncpp-dev          libcurl4-openssl-dev          libyaml-dev
+ 1494  apt list libignition*
+ 1495  apt list libignition-msgs*
+ 1496  gazebo
+ 1497  ifconfig 
+ 1498  history
+ 1499  history | grep rosserial
+ 1500  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1501  ls
+ 1502  source devel/setup.bash 
+ 1503  rosrun rosrun rosserial_python serial_node.py _port:=/dev/ttyAMC0 
+ 1504  rosrun rosserial_python
+ 1505  rosrun rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 
+ 1506  rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 
+ 1507  ifconfig 
+ 1508  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1509  source devel/setup.bash 
+ 1510  roslaunch drivetrain robot_in_world.launch 
+ 1511  cd ..
+ 1512  ls
+ 1513  sudo ./canSetUp.sh 
+ 1514  roslaunch drivetrain robot_in_world.launch 
+ 1515  cd sumitomo_ws/
+ 1516  gazebo 
+ 1517  roslaunch drivetrain robot_in_world.launch 
+ 1518  catkin_make
+ 1519  roslaunch drivetrain robot_in_world.launch 
+ 1520  ifconfig
+ 1521  roslaunch drivetrain robot_in_world.launch 
+ 1522  roscore
+ 1523  rostopic list
+ 1524  roslaunch drivetrain robot_in_world.launch 
+ 1525  roscore
+ 1526  sudo reboot now
+ 1527  dsmeg
+ 1528  dmesg
+ 1529  ifconfig
+ 1530  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1531  source devel/setup.bash 
+ 1532  rosrun rosserial_arduino make_libraries.py 
+ 1533  history | grep rosserial_arduino
+ 1534  rosrun rosserial_arduino make_libraries.py /usr/share/arduino/libraries
+ 1535  sudo shutdown now
+ 1536  cd Downloads/
+ 1537  wget https://isource.invertekdrives.com/client-uploads/download-manager/user-guides/OPx-y-ETHEG-IN%20V2.64.zip
+ 1538  ls
+ 1539  unzip OPx-y-ETHEG-IN\ V2.64.zip 
+ 1540  ls
+ 1541  cd OPC-2-ETHIG-IN\ V2.64/
+ 1542  ls4
+ 1543  ls
+ 1544  coctl can0 ./OPC-2-ETHIG-IN_V2.64\ Allen\ Bradley\ Compatible\ Connection.eds 
+ 1545  sudo apt install coctl
+ 1546  sudo apt-get install liblely-coapp-dev liblely-co-tools python3-dcf-tools
+ 1547  sudo apt-get install pkg-config
+ 1548  ls
+ 1549  coctl can0 OPC-2-ETHIG-IN_V2.64\ Allen\ Bradley\ Compatible\ Connection.eds 
+ 1550  nano canSetUp.sh 
+ 1551  sudo ./canSetUp.sh 
+ 1552  history | grep candump
+ 1553  candump -h
+ 1554  candump can0
+ 1555  cansend -h
+ 1556  cansend can0 00000080 
+ 1557  cansend can0 1F334455#1122334455667788 / 123#R
+ 1558  cansend can0 1F334455#1122334455667788
+ 1559  cansend can0 1#R
+ 1560  ifconfig
+ 1561  ip -details sink show can0
+ 1562  ip -details link show can0
+ 1563  sudo add-apt-repository ppa:lely/ppa
+ 1564  sudo apt update
+ 1565  sudo shutdown now
+ 1566  ROSTOPIC ECHO     
+ 1567  rostopic list
+ 1568  rostopic echo /IMU
+ 1569  rostopic echo /Ultra /
+ 1570  rostopic echo /Ultra 
+ 1571  rosservice list
+ 1572  rostopic list
+ 1573  rostopic echo /IMU 
+ 1574  rostopic echo /Ultra 
+ 1575  rostopic list
+ 1576  rostopic echo /IMU 
+ 1577  rostopic echo /Ultra 
+ 1578  sudo ./Desktop/canSetUp.sh 
+ 1579  coctl can0 ./Downloads/OPT-3-ETHIG-IN_V2.64/OPT-3-ETHIG-IN_V2.64\ CodeSys\ Compatible\ Connection.eds 
+ 1580  sudo find . -name platformio.ini
+ 1581  cd ..
+ 1582  sudo find . -name platformio.ini
+ 1583  cd home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/
+ 1584  ls
+ 1585  source devel/setup.bash 
+ 1586  history | grep rosserial
+ 1587  rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+ 1588  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1589  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1590  source devel/setup.bash 
+ 1591  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1592  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1593  lsUSB
+ 1594  lsubs
+ 1595  lsusb
+ 1596  rosrun rosserial_python serial_node.py /dev/ttyUSBO _baud:=57600
+ 1597  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1598  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1599  rosrun rosserial_python serial_node.py
+ 1600  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1601  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1602  rostopic list
+ 1603  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1604  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1605  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1606  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1607  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1608  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1609  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=57600
+ 1610  rosrun rosserial_python serial_node.py /dev/ttyUSB0 _baud:=115200
+ 1611  git add .
+ 1612  git commit -m "functional Arduino combo"
+ 1613  git push origin main 
+ 1614  roscore
+ 1615  cd Desktop/
+ 1616  cat tocken 
+ 1617  cat Desktop/tocken 
+ 1618  spawn_model -h
+ 1619  rosservice list
+ 1620  cat Desktop/tocken 
+ 1621  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
+ 1622  clear
+ 1623  cd src/
+ 1624  git add .
+ 1625  git commit -m "removed unnecessary files"
+ 1626  ls
+ 1627  cd ..
+ 1628  ls
+ 1629  cd 
+ 1630  cd ../..
+ 1631  ls
+ 1632  cd opt/ros/melodic/lib/
+ 1633  ls
+ 1634  cd
+ 1635  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1636  cd ..
+ 1637  list -a
+ 1638  ls -a
+ 1639  nano .gitignore 
+ 1640  git rm -r --cached .
+ 1641  git add .
+ 1642  git commit -m "switched to catkin build"
+ 1643  cd sumitomo_ws/
+ 1644  ls -a
+ 1645  nano .gitignore 
+ 1646  ls
+ 1647  ls -a
+ 1648  cd ..
+ 1649  nano .gitignore 
+ 1650  git rm -r --cached .
+ 1651  git add .
+ 1652  git commit -m "cleaned folders from catkin build"
+ 1653  ls
+ 1654  cd sumitomo_ws/
+ 1655  ls
+ 1656  ifconfig 
+ 1657  ls
+ 1658  cd Documents/SumiyomoAGV/
+ 1659  ls
+ 1660  git status
+ 1661  cd ArduinoCodes/
+ 1662  git add .
+ 1663  git commit -m "actual arduino code, for ultrasonic and imu"
+ 1664  git push origin main
+ 1665  cd ..
+ 1666  git status
+ 1667  git add .
+ 1668  git commit -m "changes for arduino baud rate"
+ 1669  git push origin main
+ 1670  cd sumitomo_ws/
+ 1671  ls
+ 1672  catkin_make
+ 1673  ls /opt/ros/melodic/lib/libcanopen_ros_chain.so 
+ 1674  cat /opt/ros/melodic/lib/libcanopen_ros_chain.so 
+ 1675  catkin_make
+ 1676  catkin clean
+ 1677  ifconfig 
+ 1678  source devel/setup.bash 
+ 1679  roslaunch drivetrain robot_in_world.launch 
+ 1680  git push origin main
+ 1681  catkin_make
+ 1682  catkin_make 
+ 1683  ls
+ 1684  rm -rf build
+ 1685  rm -rf devel/
+ 1686  catkin build
+ 1687  source /opt/ros/melodic/setup.bash 
+ 1688  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
+ 1689  roslaunch gazebo_worlds empty_world.launch
+ 1690  catkin build
+ 1691  rospack find gazebo
+ 1692  catkin build
+ 1693  sudo apt-get install lsb-release wget gnupg
+ 1694  catkin clean
+ 1695  catkin build
+ 1696  git add src/drivetrain/package.xml 
+ 1697  git commit -m "added gazebo_plugisas dependency"
+ 1698  git add .vscode/c_cpp_properties.json 
+ 1699  git commit -m "added gazebo path, but apears to not be working"
+ 1700  catkin build
+ 1701  catkin clean 
+ 1702  catkin build
+ 1703  find . -name CMakeLists.txt
+ 1704  catkin build
+ 1705  sudo apt install libgazebo9-dev 
+ 1706  rospack find gazebo
+ 1707  rospack find gazebo_ros
+ 1708  rospack find gazebo_plugins 
+ 1709  catkin build
+ 1710  cd src/drivetrain/
+ 1711  git add package.xml CMakeLists.txt 
+ 1712  git commit -m "Added gazebo dependencies"
+ 1713  sudo shutdown now
+ 1714  cansend can0 0
+ 1715  1
+ 1716  cansend can0 1#0
+ 1717  cansend can0 01#0
+ 1718  cansend can0 001#0
+ 1719  cansend can0 001#00
+ 1720  cansend can0 001#00.00
+ 1721  cansend can0 001#00.PUTO
+ 1722  cansend can0 001#00.AA
+ 1723  cansend can0 001#0010000000000000001000000000000100100000000000110000000000000110
+ 1724  cansend can0 001#2082.0001
+ 1725  sudo '/home/sumitomo/Desktop/canSetUp.sh' 
+ 1726  ifconfig 
+ 1727  ifconfig 7
+ 1728  ifconfig 
+ 1729  source /opt/ros/melodic/setup.bash 
+ 1730  roslaunch gazebo_worlds empty_world.launch
+ 1731  ls /opt/ros/melodic/lib/
+ 1732  cd ../..
+ 1733  search . -name gazebo.hh
+ 1734  sudo find . -name gazebo.hh
+ 1735  sudo find . -name gazebo_core.hh
+ 1736  roslaunch gazebo_ros empty_world.launch
+ 1737  ls usr/lib/
+ 1738  ls usr/lib/ | grep gazebo
+ 1739  ls usr/lib/ | grep linux
+ 1740  ls usr/lib/aarch64-linux-gnu/
+ 1741  candump can0
+ 1742  sudo ./Desktop/canSetUp.sh 
+ 1743  candump can0
+ 1744  a
+ 1745  mkdir Cocomm
+ 1746  cd Cocomm
+ 1747  gitclone https://github.com/CANopenNode/CANopenLinux/tree/master/cocomm
+ 1748  git clone https://github.com/CANopenNode/CANopenLinux/tree/master/cocomm
+ 1749  gh repo clone CANopenNode/CANopenLinux
+ 1750  https://github.com/CANopenNode/CANopenLinux.git
+ 1751  git clone https://github.com/CANopenNode/CANopenLinux.git
+ 1752  ls
+ 1753  cd CANopenLinux/
+ 1754  ls
+ 1755  cd cocomm
+ 1756  ls
+ 1757  make 
+ 1758  sudo make install
+ 1759  ifconfig
+ 1760  apt list
+ 1761  cocom
+ 1762  cd Documents
+ 1763  cd cocom
+ 1764  cd cocomm
+ 1765  ifconfig
+ 1766  cocomm --help
+ 1767  shutdown now
+ 1768  ls /tmp/
+ 1769  ifconfig
+ 1770  ls /tmp/
+ 1771  ls /tmp/argus_socket 
+ 1772  cd Documents/libcanopen/
+ 1773  ls
+ 1774  cd Cocomm/CANopenLinux/
+ 1775  git submodule init 
+ 1776  submodule update
+ 1777  git submodule update
+ 1778  cd cocomm/
+ 1779  lsinertial
+ 1780  make
+ 1781  ls -a
+ 1782  sudo make install
+ 1783  ls
+ 1784  sudo ./cocomm 
+ 1785  canopend --help
+ 1786  cd
+ 1787  cd Documents/
+ 1788  ls
+ 1789  git clone -recursive https://github.com/CANopenNode/CANopenDemo.git
+ 1790  git clone --recursive https://github.com/CANopenNode/CANopenDemo.git
+ 1791  cd CANopenDemo/
+ 1792  ls
+ 1793  cd CANopenLinux/
+ 1794  make
+ 1795  rm *.persist
+ 1796  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1797  clear
+ 1798  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1799  clear
+ 1800  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1801  clear
+ 1802  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1803  sudo Desktop/canSetUp.sh 
+ 1804  cocomm "1 read 0x1017 0 u16"
+ 1805  cd Documents/libcanopen/
+ 1806  ls
+ 1807  cd Cocomm/
+ 1808  ls
+ 1809  cd Ca
+ 1810  CD CANopenLinux/
+ 1811  cd CANopenLinux/
+ 1812  ls
+ 1813  rm *.persist
+ 1814  make
+ 1815  cd ..
+ 1816  cd CANopenLinux/cocomm/
+ 1817  make
+ 1818  rm *.persist
+ 1819  ./ caopend can0 -i 1 -c "lotmp"
+ 1820  ./ caopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1821  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1822  ld ..
+ 1823  ls ..
+ 1824  ls
+ 1825  ls -a
+ 1826  cd ..
+ 1827  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1828  ls -a
+ 1829  cd ..
+ 1830  ls
+ 1831  cd ..
+ 1832  ls
+ 1833  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1834  cocomm "1 read 0x1017 0 u16"
+ 1835  cocomm "1 read 0x2082 0001"
+ 1836  cocomm "1 read 0x2082 0001 u16"
+ 1837  cocomm "1 read 0x2082 1 u16"
+ 1838  cocomm "1 write 0x2082 1 u16"
+ 1839  cocomm "1 read 0x1017 0 u16"
+ 1840  cocomm "1 read 2082x0001 0 u16"
+ 1841  cocomm --help
+ 1842  cocomm "1 read 2082x0001 0 u16"
+ 1843  cocomm "1 write 0x2082 0 u16"
+ 1844  cocomm "1 read 0x1017 0 u16"
+ 1845  cocomm "1 read 0x2082 0 u16"
+ 1846  cocomm "1 read 0x1017 0 u16"
+ 1847  cocomm "1 read 0x2010 0 s16"
+ 1848  cocomm "1 read hx2010 0 s16"
+ 1849  cocomm "1 read h2010 0 s16"
+ 1850  cocomm "1 read 2010h 0 s16"
+ 1851  cocomm "1 read 0x2082 0001 "
+ 1852  cocomm "0 read 0x2082 0001 "
+ 1853  cocomm "1 read 0x1017 0 u16"
+ 1854  cocomm "1 read 0x1002 0 u16"
+ 1855  cocomm "1 write 0x1002 0 u16"
+ 1856  cocomm "1 read 0x2082 "
+ 1857  cocomm "1 read 0x2082 u16"
+ 1858  cocomm "1 write 0x2082 1 u16"
+ 1859  cocomm "1 read 0x1018 1 u32"
+ 1860  cocomm "1 read 0x1018 2 u32"
+ 1861  cocomm "1 read 0x1018 3 u32"
+ 1862  cocomm "1 read 0x1017 1 u16"
+ 1863  cocomm "1 read 0x1017 0 u16"
+ 1864  cocomm "1 read 0x1600 0 u8"
+ 1865  cocomm "1 read 0x200A 0 u8"
+ 1866  cocomm "1 read 0x200A"
+ 1867  cocomm "1 write 0x2082 0x01 "
+ 1868  cocomm "1 write 0x2082 0x0001 "
+ 1869  cocomm "1 r 0x2082 0x0001 "
+ 1870  cocomm "1 w 0x2082 0x0001 "
+ 1871  cocomm "1 w 0x2082 0x0001"
+ 1872  cocomm "1 r 0x2082 0x0001"
+ 1873  .
+ 1874  man cocomm
+ 1875  cocomm "1 reset node"
+ 1876  cocomm "1 read 0x1017 0 u16"
+ 1877  compgen -a
+ 1878  compgen -c
+ 1879  compgen -c | grep coco
+ 1880  compgen "help datatype"
+ 1881  cocomm "help datatype"
+ 1882  cocomm "1 r 0x2082 0x0001"
+ 1883  cocomm "1 w 0x2082 0x0001"
+ 1884  cocomm "1 w 0x2082 0x0001 hex"
+ 1885  cocomm "1 w 0x2082 0001 hex"
+ 1886  cocomm "1 w 0x2082 01 hex"
+ 1887  cocomm "1 read 0x1017 0 u16"
+ 1888  cocomm "1 w 0x2082 1 hex"
+ 1889  clear
+ 1890  cocomm "1 reset node"
+ 1891  clear
+ 1892  cocomm "1 read 0x1017 0 u16"
+ 1893  cansump -a can0
+ 1894  candump -a can0
+ 1895  clear
+ 1896  candump -a can0
+ 1897  sudo Desktop/canSetUp.sh 
+ 1898  cocomm "1 read 0x1017 0 u16"
+ 1899  cd Documents/
+ 1900  '/home/sumitomo/Desktop/canSetUp.sh' 
+ 1901  candump
+ 1902  candump can0
+ 1903  ifconfig
+ 1904  cd Documents/
+ 1905  ls
+ 1906  cd SumiyomoAGV/
+ 1907  ls
+ 1908  cd CanComm/
+ 1909  ls
+ 1910  cd ..
+ 1911  ls
+ 1912  CANopenDemo/
+ 1913  cd CANopenDemo/
+ 1914  ls
+ 1915  ifconfig
+ 1916  cd ..
+ 1917  ls
+ 1918  cd CANopenDemo/
+ 1919  ls
+ 1920  coctl vcan0 ~/Documents/CANopenDemo/INVERTEK_ODE3_CANopen v3.00.eds
+ 1921  coctl can0 ~/Documents/CANopenDemo/INVERTEK_ODE3_CANopen v3.00.eds
+ 1922  coctl can0 ~/Documents/CANopenDemo/INVERTEK_ODE3_CANopen_v3.00.eds
+ 1923  cocomm can0 ~/Documents/CANopenDemo/INVERTEK_ODE3_CANopen_v3.00.eds
+ 1924  history | grep cocomm
+ 1925  cocomm "1 read 0x1017 0 u16"
+ 1926  sudo ./cocomm 
+ 1927  cd Documents/
+ 1928  ls
+ 1929  cd CANopenDemo/
+ 1930  ls
+ 1931  CANopenLinux/
+ 1932  cd CANopenLinux/
+ 1933  ls
+ 1934  sudo ./cocomm 
+ 1935  cd cocomm/
+ 1936  ls
+ 1937  sudo ./cocomm 
+ 1938  cocomm --help
+ 1939  cocomm "1 read 0x1017 0 u16"
+ 1940  history | grep tmp
+ 1941  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1942  canopend can0 -i 1
+ 1943  history |grep canopend
+ 1944  cocomm -s can0
+ 1945  canopend can0 -i 1
+ 1946  cocomm -s can0
+ 1947  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1948  cocomm "1 read 0x1017 0 u16"
+ 1949  ls /tmp
+ 1950  canopend 
+ 1951  ls
+ 1952  cat README.md 
+ 1953  cd ..
+ 1954  ls
+ 1955  cd ..
+ 1956  ls
+ 1957  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1958  cd demo/
+ 1959  ls
+ 1960  cd ..
+ 1961  cd CANopenL
+ 1962  cd CANopenLinux/
+ 1963  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1964  ls
+ 1965  cd ..
+ 1966  ls
+ 1967  cd CANopenLinux/
+ 1968  ./canopend can0 -i 1 -c "local-/tmp/CO_command_socket"
+ 1969  ls
+ 1970  cat README.md 
+ 1971  canopend
+ 1972  make
+ 1973  sudo make install 
+ 1974  canopend 
+ 1975  canopend can0 -i 1
+ 1976  cocomm "1 w 0x2000 0 u16 0000"
+ 1977  cocomm "1 r 0x2082 0 u16"
+ 1978  coctl can0 ~/Documents/CANopenDemo/INVERTEK_ODE3_CANopen v3.00.eds
+ 1979  coctl can0 ~/Documents/CANopenDemo/INVERTEK_ODE3_CANopen_v3.00.eds
+ 1980  sudo Desktop/canSetUp.sh 
+ 1981  candump can0
+ 1982  sudo Desktop/canSetUp.sh 
+ 1983  candump
+ 1984  candump -a can0
+ 1985  ls /opt/ros/melodic/include/
+ 1986  cd sumitomo_ws/
+ 1987  catkin build
+ 1988  ls /opt/ros/melodic/include/ros
+ 1989  apt find gazebo
+ 1990  dpkg -L gazebo9
+ 1991  ls /usr/include/gazebo-9/
+ 1992  ls /usr/include/gazebo-9/gazebo/
+ 1993  catkin build
+ 1994  ls /usr/include/gazebo-9/
+ 1995  ls usr/lib/aarch64-linux-gnu/gazebo-9/plugins
+ 1996  ls /usr/lib/aarch64-linux-gnu/gazebo-9/plugins
+ 1997  catkin build
+ 1998  #include <gazebo/common/common.hh>
+ 1999  catkin build
+ 2000  /usr/include/ignition/
+ 2001  ls /usr/include/ignition/
+ 2002  catkin build
+ 2003  sudo apt-get install libignition-math2-dev
+ 2004  catkin build
+ 2005  sudo apt-get install libignition-math4*
+ 2006  sudo apt-get install libignition-math4-dev 
+ 2007  dpkg -L libignition-math4-dev 
+ 2008  ls /usr/lib/aarch64-linux-gnu/
+ 2009  ls /usr/lib/aarch64-linux-gnu/ | grep libignit
+ 2010  catkin build
+ 2011* ls /usr/include/ignition/
+ 2012  catkin build
+ 2013  cd src/drivetrain/
+ 2014  git add .
+ 2015  git commit -m "finally, gazebo compilesgit add ."
+ 2016  cd ../..
+ 2017  git add .vscode/
+ 2018  git commit -m "added gazebo 2 config path"
+ 2019  git push origin main
+ 2020  apt list ros-melodi
+ 2021  apt list ros-melodic-gazebo-ros-control
+ 2022  sudo apt install ros-melodic-gazebo-ros-control
+ 2023  history > commands.txt

@@ -1,0 +1,97 @@
+ 1094  sudo apt install screen
+ 1097  apt install
+ 1101  apt install rosserial
+ 1102  apt install rosserial_arduino
+ 1103  sudo apt install rosserial_arduino
+ 1105  sudo apt-get install ros-indigo-rosserial-arduino
+ 1106  sudo apt-get install ros-melodic-rosserial-arduino
+ 1107  sudo apt-get install ros-melodic-rosserial
+ 1112  sudo pip3 uninstall catkin_tools
+ 1113  sudo apt-get install python3-catkin-tools
+ 1117  sudo apt-get uninstall python3-catkin-tools
+ 1120  sudo pip3 install -U catkin_tools
+ 1141  sudo apt-get install gazebo9
+ 1142  sudo apt-get install libgazebo9
+ 1143  sudo apt-get install libgazebo9-dev 
+ 1144  sudo apt-get install gazebo9-plugin-base 
+ 1148  sudo apt-get install gazebo9-common 
+ 1149  sudo apt-get install gazebo9-dbg 
+ 1150  sudo apt-get install libgazebo9
+ 1157  sudo apt-get install ros-melodic-gazebo-ros-pkgs ros-melodic-gazebo-ros-control
+ 1161  sudo apt install ros-melodic-cmake-modules 
+ 1165  sudo apt install ros-melodic-effort-controllers
+ 1166  sudo apt install ros-melodic-joint-state-controller
+ 1168  sudo apt install ros-shape-msgs
+ 1172  sudo apt-get install python-rosmake
+ 1174  sudo apt-get install ros-melodic-tf2-geometry-msgs 
+ 1175  sudo apt-get install ros-melodic-shape-msgs 
+ 1176  sudo apt-get install ros-melodic-image-transport-plugins 
+ 1177  sudo apt-get install ros-melodic-stereo-msgs 
+ 1179  rosdep install rosmake
+ 1187  sudo apt install rosserial
+ 1189  sudo apt install rosserial
+ 1190  sudo apt install arduino
+ 1210  sudo pip3 install pyserial
+ 1227  sudo apt install atom
+ 1235  sudo sh install.sh
+ 1240  sudo sh install.sh
+ 1244  sudo sh install.sh
+ 1247  sudo apt-get install ros-indigo-rosserial-arduino
+ 1248  sudo apt-get install ros-melodic-rosserial-arduino
+ 1249  sudo apt-get install ros-melodic-rosserial
+ 1253  catkin_make install
+ 1319  sudo pip3 install queue
+ 1320  sudo pip3 install queuelib
+ 1322  sudo pip install queuelib
+ 1326  sudo apt install python-pip
+ 1327  pip install rosserial_python
+ 1330  catkin_make install
+ 1338  rosdep install --from-paths src --ignore-src -r -y
+ 1342  sudo pip uninstall queuelib
+ 1343  sudo pip install simple-queue
+ 1345  sudo pip install queuqlib
+ 1347  sudo pip install queuelib
+ 1349  sudo pip uninstall queuelib
+ 1350  sudo pip uninstall simplequeue
+ 1351  sudo pip uninstall simple-queue
+ 1429  sudo apt install libignition-msgs
+ 1430  sudo apt install libignition-msgs-dev 
+ 1431  sudo apt install libignition-common
+ 1432  sudo apt install libignition-common-dev 
+ 1433  sudo apt install libignition-fuel-tools
+ 1434  sudo apt install libignition-fuel-tools1-*
+ 1435  sudo apt install libignition-math4*
+ 1436  sudo apt install libignition-math4
+ 1437  sudo apt install libignition-math4-dev 
+ 1438  sudo apt install libignition-math4-dbg 
+ 1439  sudo apt install libignition-transport4*
+ 1444  sudo apt install ros-melodic-gazebo-ros
+ 1445  apt list installed 
+ 1446  apt list --installed 
+ 1447  apt list --installed | grep -i gazebo
+ 1466  apt list -- installed | grep ros
+ 1467  apt list --installed | grep ros
+ 1468  apt list --installed | grep ros*controller
+ 1469  apt list --installed | grep -i ros*controller
+ 1470  apt list --installed | grep -i ros*
+ 1471  apt list --installed | grep -i controller
+ 1487  sudo apt-get install build-essential                      cmake          libfreeimage-dev          libtinyxml2-dev          uuid-dev          libgts-dev          libavdevice-dev          libavformat-dev          libavcodec-dev          libswscale-dev          libavutil-dev          libprotoc-dev              libprotobuf-dev
+ 1488  sudo apt-get install build-essential                      cmake          libzip-dev          libjsoncpp-dev          libcurl4-openssl-dev          libyaml-dev
+ 1489  sudo apt-get install build-essential                      cmake                      git                      python
+ 1490  sudo apt-get install build-essential                      cmake          libfreeimage-dev          libtinyxml2-dev          uuid-dev          libgts-dev          libavdevice-dev          libavformat-dev          libavcodec-dev          libswscale-dev          libavutil-dev          libprotoc-dev              libprotobuf-dev
+ 1491  sudo apt-get install build-essential                      cmake                      git                      python                      libboost-system-dev                      libtinyxml-dev                      libxml2-utils                      ruby-dev                      ruby
+ 1492  sudo apt-get install build-essential                      cmake                      git                      libprotoc-dev                      libprotobuf-dev                      protobuf-compiler
+ 1493  sudo apt-get install build-essential                      cmake          libzip-dev          libjsoncpp-dev          libcurl4-openssl-dev          libyaml-dev
+ 1545  sudo apt install coctl
+ 1546  sudo apt-get install liblely-coapp-dev liblely-co-tools python3-dcf-tools
+ 1547  sudo apt-get install pkg-config
+ 1693  sudo apt-get install lsb-release wget gnupg
+ 1705  sudo apt install libgazebo9-dev 
+ 1758  sudo make install
+ 1782  sudo make install
+ 1973  sudo make install 
+ 2003  sudo apt-get install libignition-math2-dev
+ 2005  sudo apt-get install libignition-math4*
+ 2006  sudo apt-get install libignition-math4-dev 
+ 2022  sudo apt install ros-melodic-gazebo-ros-control
+ 2024  history | grep install > commandsInstall.txt
