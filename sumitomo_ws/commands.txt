@@ -590,12 +590,10 @@
  1613  git push origin main 
  1614  roscore
  1615  cd Desktop/
- 1616  cat tocken 
  1617  cat Desktop/tocken 
  1618  spawn_model -h
  1619  rosservice list
  1620  cat Desktop/tocken 
- 1621  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
  1622  clear
  1623  cd src/
  1624  git add .
@@ -662,7 +660,6 @@
  1685  rm -rf devel/
  1686  catkin build
  1687  source /opt/ros/melodic/setup.bash 
- 1688  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
  1689  roslaunch gazebo_worlds empty_world.launch
  1690  catkin build
  1691  rospack find gazebo
