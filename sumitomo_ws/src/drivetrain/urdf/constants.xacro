@@ -11,6 +11,11 @@
 <xacro:property name="wheel_radio" value="${base_height/2}"/> 
 <xacro:property name="wheel_mass" value="3"/> 
 
+<!-- === Mesh properties===-->
+<xacro:property name="mesh_scale" value="1.0 1.0 1.0"/> 
+<xacro:property name="chassis_path" value="package://drivetrain/urdf/chasis.STL"/> 
+
+
 <!-- TODO: Correct the caster_rad value -->
 <xacro:property name="caster_rad" value="${wheel_radio}"/>
 
