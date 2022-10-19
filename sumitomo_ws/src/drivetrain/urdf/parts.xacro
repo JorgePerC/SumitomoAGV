@@ -24,7 +24,7 @@
           <cylinder length="${wheel_base}" radius="${wheel_radio}"/>
         </geometry>
         <!-- Origin relative to the link's joint -->
-        <origin xyz= "0 0 0" rpy="${pi/2} 0 0"/>
+        <origin xyz= "0 0 0" rpy="${(pi/2)*invert} 0 0"/>
         
         <material name="black">
           <color rgba="0 0 0 0.5"/>
@@ -42,7 +42,7 @@
       <!-- Inertial: Requred for Gazebo -->
       <inertial>
         <mass value="${wheel_mass}"/>
-        <!-- <origin xyz="0 0 0" rpy="${pi/2} 0 0"/> -->
+        <!-- <origin xyz="0 0 0" rpy="${(pi/2)*invert} 0 0"/> -->
         <xacro:wheel_inertia r="${wheel_radio}" l="${wheel_base}" m="${wheel_mass}"/> 
       </inertial> 
 
@@ -55,11 +55,11 @@
       <parent link="${parent_link}"/>
       <child link="wheel_${side}"/>
 
-      <origin xyz="0 ${(base_length/2)*invert} ${wheel_radio}"/>
+      <origin xyz="0 ${(wheel_dist/2)*invert} ${wheel_radio - 0.002}"/>
       <!-- Axis rotation-->
-      <axis xyz="0 1 0"/> <!-- rpy="0 0 0 -->
+      <axis xyz="0 1 0" rpy="0 0 0"/> <!-- -->
       <!-- Joint limits (Newtons) (rad/s)-->
-      <limit effort="50" velocity="20"/>
+      <limit effort="5000" velocity="3000"/>
     </joint>
   
     <!-- Transmission -->

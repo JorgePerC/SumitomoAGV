@@ -29,7 +29,7 @@ CAN communication programs we develop.-->
       <geometry>
         <mesh filename="package://drivetrain/urdf/chasis.STL" scale="1.0 1.0 1.0"/>
       </geometry>
-      <origin xyz="0 0 0.3"/>
+      <origin xyz="0 0 50"/>
       <material name="white">
         <color rgba="0 0 1 1"/>
       </material>

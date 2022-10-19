@@ -28,6 +28,8 @@
         <rosparam command="load" file="$(arg CAN_nodes)" />
     </node>
 
+    <node name="serial" pkg="rosserial_python" type="serial_node.py">
+    </node> 
     <!-- Load robot joint state publisher -->
         <!-- Note: Reads the robot model description, finds all of the joints, and publishes joint 
         values to all of the nonfixed joints. Different sources for the values of each joint are also available.
@@ -75,7 +77,7 @@
 	
     <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-	args="-urdf -model simple_agv -param robot_description -x 0 -y 0 -z 0"/> 
+	args="-urdf -model simple_agv -param robot_description -x 0 -y 0 -z 0.5"/> 
     <!--       robot:name in URDF || loaded params with URDF || spawn point-->
     
 

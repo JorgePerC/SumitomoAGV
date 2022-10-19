@@ -26,7 +26,7 @@ CAN communication programs we develop.-->
             <geometry>
                 <mesh filename="${chassis_path}" scale="${mesh_scale}"/>
             </geometry>
-            <origin xyz="0 0 0.3"/>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
             <material name="white">
                 <color rgba="0 0 1 1"/>
             </material>
@@ -34,7 +34,7 @@ CAN communication programs we develop.-->
 
          <!-- Collission -->
         <collision>
-            <origin xyz="0 0 0.3"/>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
             <geometry>
                 <mesh filename="${chassis_path}" scale="${mesh_scale}"/>
             </geometry>
@@ -42,7 +42,7 @@ CAN communication programs we develop.-->
         
         <!-- Inertial: Requred for Gazebo -->
         <inertial>
-            <mass value="${wheel_mass}"/>
+            <mass value="${chassis_weight}"/>
             <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
         </inertial> 
     </link>
@@ -86,37 +86,37 @@ CAN communication programs we develop.-->
     <rightJoint>joint_wheel_right</rightJoint>
 
     <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
-    <wheelSeparation>0.5380</wheelSeparation>
+    <wheelSeparation>${wheel_dist}</wheelSeparation>
 
     <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
-    <wheelDiameter>0.2410</wheelDiameter>
+    <wheelDiameter>${wheel_radio*2}</wheelDiameter>
 
     <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
-    <wheelAcceleration>1.0</wheelAcceleration>
+    <wheelAcceleration>100.0</wheelAcceleration>
 
     <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
-    <wheelTorque>20</wheelTorque>
+    <wheelTorque>500</wheelTorque>
 
     <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
     <commandTopic>cmd_vel</commandTopic>
 
     <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
-    <odometryTopic>odom</odometryTopic>
+    <!-- <odometryTopic>odom</odometryTopic> -->
 
     <!-- Odometry frame, defaults to `odom` -->
-    <odometryFrame>odom</odometryFrame>
+    <!-- <odometryFrame>odom</odometryFrame> -->
 
     <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
-    <robotBaseFrame>chassis</robotBaseFrame>
+    <!-- <robotBaseFrame>chassis</robotBaseFrame> -->
 
     <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
-    <odometrySource>1</odometrySource>
+    <!-- <odometrySource>1</odometrySource> -->
 
     <!-- Set to true to publish transforms for the wheel links, defaults to false -->
     <publishWheelTF>true</publishWheelTF>
 
     <!-- Set to true to publish transforms for the odometry, defaults to true -->
-    <publishOdom>true</publishOdom>
+    <publishOdom>false</publishOdom>
 
     <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
     <publishWheelJointState>true</publishWheelJointState>
