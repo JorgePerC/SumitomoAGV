@@ -28,9 +28,10 @@
         <rosparam command="load" file="$(arg CAN_nodes)" />
     </node>
 
+    <!-- CODIGO PARA LEVANTAR EL SERIAL DE ARDUINO 
     <node name="serial" pkg="rosserial_python" type="serial_node.py">
     </node> 
-    <!-- Load robot joint state publisher -->
+        Load robot joint state publisher -->
         <!-- Note: Reads the robot model description, finds all of the joints, and publishes joint 
         values to all of the nonfixed joints. Different sources for the values of each joint are also available.
         Along with a GUI to visualize and intreact with the robot.

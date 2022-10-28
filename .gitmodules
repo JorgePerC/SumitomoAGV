@@ -1,0 +1,4 @@
+[submodule "rosserial_melodic"]
+    path = sumitomo_ws/src
+    url = https://github.com/ros-drivers/rosserial.git
+    branch = melodic-devel
