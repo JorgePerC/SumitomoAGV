@@ -20,10 +20,10 @@ drivetrain: # This should be the namespace
     type: position_controllers/EffortJointInterface
     joint: joint_wheel_right
     pid: {p: 100.0, i: 0.01, d: 10.0} 
-    required_drive_mode: 2 # For velocity control CAN_402 || http://wiki.ros.org/canopen_402
+    required_drive_mode: 2 # For velocity profile control CAN_402 || http://wiki.ros.org/canopen_402
   
-  joint2_position_controller:
-    type: position_controllers/EffortJointInterface
-    joint: joint_wheel_left
-    pid: {p: 100.0, i: 0.01, d: 10.0} 
-    required_drive_mode: 2
+  #joint2_position_controller:
+    #type: position_controllers/EffortJointInterface
+    #joint: joint_wheel_left
+    #pid: {p: 100.0, i: 0.01, d: 10.0} 
+    #required_drive_mode: 2

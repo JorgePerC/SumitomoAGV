@@ -1,18 +1,43 @@
 <?xml version="1.0" ?>
 
 <launch> <!-- Root tag for launch files -->
-    <!-- ===== Arguments ===== -->
+    <!-- ===== Arguments =====-->
+    <arg name="rviz_config" value="$(find drivetrain)/spawn_simple.rviz"/>
     <arg name="CAN_config" value="$(find drivetrain)/config/can_bus.yaml"/>
     <arg name="CAN_controller" value="$(find drivetrain)/config/can_motor_controller.yaml"/>
     <arg name="CAN_nodes" value="$(find drivetrain)/config/motor_nodes.yaml"/>
- 
+    
+    <arg name="world_name" default="$(find drivetrain)/world/empty_world.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+
+    <!-- ===== Add .yamls to the parameter server ===== -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find drivetrain)/urdf/simple_agv.xacro"  /> 
     <!-- ===== Launch ROS nodes ===== -->
-    <!-- Load CAN configuration node (file) -->
+        <!-- Load CAN configuration node (file) -->
     <node name="canopen_chain" pkg="canopen_chain_node" type="canopen_chain_node" output="screen" clear_params="true">
         <rosparam command="load" file="$(arg CAN_config)" />
         <rosparam command="load" file="$(arg CAN_controller)" />
         <rosparam command="load" file="$(arg CAN_nodes)" />
     </node>
+
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+    
+    <!-- Load robot state publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+        <!-- Note: The following also connects the robot state publisher to Gazebo -->
+        <!-- <remap from="/joint_states" to="/drivetrain/joint_states" /> -->
+    </node>
+
+    <!-- Load rviz configuration -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" output="screen"/> -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" required="true" />
+
+    <!-- load the controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" ns="/drivetrain" args="joint1_position_controller 
+                                            joint2_position_controller 
+                                            joint_state_controller"/>
+
+
    <!-- <node name="camera" pkg="vision" type="camera.py"> 
 </node> -->
    <!-- <node name="line_detector" pkg="vision" type="line_detector.py"> 
