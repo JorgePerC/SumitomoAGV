@@ -8,7 +8,7 @@ defaults: # optional, all defaults can be overwritten per node
   motor_layer: # settings passed to motor layer (plugin-specific)
     switching_state: 3 # (Operation_Enable), state for mode switching | It may be 4
   
-  publish: ["1001"] # Objects to read
+  publish: ["1001", "60FF", "6060", "6040", "605B", "6041"] # Objects to read
   # pos_to_device: "rint(rad2deg(pos)*1000)" # rad -> mdeg
   # pos_from_device: "deg2rad(obj6064)/1000" # actual position [mdeg] -> rad
   # vel_to_device: "rint(rad2deg(vel)*1000)" # rad/s -> mdeg/s
@@ -20,12 +20,6 @@ defaults: # optional, all defaults can be overwritten per node
 nodes:
   node1:
     name: motorRight
-    id: 2
-    eds_file: "/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/src/drivetrain/config/smartris.eds" # Note: this is a full path, change it to yours
-  node2:
-    name: motorLeft
-    id: 3
+    id: 1
     eds_file: "/home/sumitomo/Documents/SumiyomoAGV/sumitomo_ws/src/drivetrain/config/smartris.eds" 
-
-
 

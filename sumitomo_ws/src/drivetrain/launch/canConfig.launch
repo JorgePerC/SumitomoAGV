@@ -13,7 +13,12 @@
         <rosparam command="load" file="$(arg CAN_controller)" />
         <rosparam command="load" file="$(arg CAN_nodes)" />
     </node>
-
+   <!-- <node name="camera" pkg="vision" type="camera.py"> 
+</node> -->
+   <!-- <node name="line_detector" pkg="vision" type="line_detector.py"> 
+</node> -->
+    <!--<node name="controller" pkg="vision" type="controller.py"> 
+</node> -->
     <!-- Start nodelet manager 
     <node pkg="nodelet" type="nodelet" name="standalone_nodelet"  args="manager" output="screen"/>
     -->

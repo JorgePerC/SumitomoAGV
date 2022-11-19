@@ -17,7 +17,7 @@ class LineFollowerNode():
 		self.ones_pub = rospy.Publisher("/line",Bool,queue_size=1)
 		self.zero_pub = rospy.Publisher("/zero",Bool,queue_size=1)
 		self.bridge = cv_bridge.CvBridge()
-		self.img_sub = rospy.Subscriber("/camera/image_raw",Image,self.imgCallback)
+		self.img_sub = rospy.Subscriber("/video_source/raw",Image,self.imgCallback)
 		self.cam_origin_pub = rospy.Publisher("/cam_center",Pose2D,queue_size=1)
 		self.box_origin_pub = rospy.Publisher("/box_center",Pose2D,queue_size=1)
 		self.rate = rospy.Rate(60)

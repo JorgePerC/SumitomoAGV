@@ -11,6 +11,7 @@ class Camera_raw:
 		self.img_pub = rospy.Publisher("/video_source/raw",Image,queue_size=1)
 		self.rate = rospy.Rate(60)
 		self.frame = cv2.VideoCapture(0)
+		self.frame.set(5,30)
 		self.bridge = cv_bridge.CvBridge()
 
 	def img_publish(self):

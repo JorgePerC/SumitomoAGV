@@ -3,7 +3,7 @@
 bus:
   driver_plugin: can::SocketCANInterface
   device: can0 # SocketCAN network interface
-  loopback: false # Make the SocketCAN loop back messages
+  loopback: true # Make the SocketCAN loop back messages
   master_allocator: canopen::SimpleMaster::Allocator
 sync:
   interval_ms: 100 # 10 ms is recommended for non real-time systems, set to 0 to disable sync

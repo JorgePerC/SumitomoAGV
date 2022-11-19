@@ -70,7 +70,7 @@
         <arg name="command_arg2" value="-r"/> 
         <arg name="command_arg3" value="--verbose"/>
         <arg name="script_type" value="debug"/>
-        <arg name="gui" default="true"/>
+        <arg name="gui" default="false"/>
     
     <!-- start gazebo server-->
     <node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="false" output="screen"

@@ -2,14 +2,16 @@
 import rospy
 import numpy as np
 from geometry_msgs.msg import Pose2D, Twist
-from std_msgs.msg import Float32,Bool,String
+from std_msgs.msg import Float32,Bool,String, Int32
+from canopen_chain_node.srv import SetObject
+from std_srvs.srv import Trigger
 
 # callbacks
 def end_Callback():
 	# stop at last
 	robot_cmd.linear.x = 0.0
 	robot_cmd.angular.z = 0.0
-	cmd_pub.publish(robot_cmd)
+	
 
 def camCallback(msg):
 	# camera center
@@ -56,12 +58,23 @@ def lightCallback(msg):
 	# light color
 	global light
 	light = msg.data
+def VelCallback(msg):
+	global velant
+	velant = msg.data
 
 
 # init node
 rospy.init_node("controller")
 # publisher and subscribers and variables
-cmd_pub = rospy.Publisher("/cmd_vel",Twist,queue_size = 1)
+
+############# SMARTRS ##############
+rospy.wait_for_service("driver/set_object")
+set_object = rospy.ServiceProxy("driver/set_object", SetObject)
+rospy.wait_for_service("driver/init")
+driverInit = rospy.ServiceProxy("driver/init", Trigger)
+init_call = driverInit()
+rospy.Subscriber("/motorRight_60FF",Int32,VelCallback)
+###################################3
 rospy.Subscriber("/cam_center",Pose2D,camCallback)
 rospy.Subscriber("/box_center",Pose2D,boxCallback)
 rospy.Subscriber("/zebra",Bool,zebraCallback)
@@ -87,6 +100,8 @@ in_crosswalk = False
 continue_line = False
 wait_green = False
 in_process = ""
+maxvelSmar = 100000
+velant = 0
 
 # functions for robot movement
 def stop():
@@ -94,21 +109,32 @@ def stop():
 	print("stoping...")
 	robot_cmd.linear.x = 0.0
 	robot_cmd.angular.z = 0.0
-	cmd_pub.publish(robot_cmd)
+	
 
-def cross_straight(maxvel=100):
+def cross_straight(maxvel = 100):
 	# passing crosswalk straight
 	print("crosswalk straight...")
 	robot_cmd.angular.z = 0
 	robot_cmd.linear.x = maxvel
-	cmd_pub.publish(robot_cmd)
+	
 
 def cross_right(maxvel=100,R=2):
 	# passing crosswalk turning right
 	print("crosswalk right...")
 	robot_cmd.linear.x = maxvel
 	robot_cmd.angular.z = -0.045	# (1/R)*maxvel -> ideal circular turn
-	cmd_pub.publish(robot_cmd)
+
+def SmartrisRun(vel):
+	######### SMARTRS #######################
+	node = "motorRight"
+	obj = '0x60FF'
+	#########################################
+	vel_service_call = set_object(node,obj, str(vel), False)
+	print("motor in motion")
+		
+	
+
+
 
 def follow(maxvel=100, K=0.09):
 	# following line based on box and camera centers
@@ -119,82 +145,38 @@ def follow(maxvel=100, K=0.09):
 	# incoming turn -> slow linear velocity
 	if (box_theta < -75 and box_theta > -80) or (box_theta < -15 and box_theta > -20):
 		robot_cmd.linear.x = maxvel/2
+################################### SMARTRIS ########################
+		vel = maxvelSmar/2
+####################################################################
 	else:
-		robot_cmd.linear.x = maxvel
+		robot_cmd.linear.x = maxvelSmar
+############################ SMARTRIS ################################
+		vel = maxvelSmar
+######################################################################
 	# angular speed saturation
-	if x_dif < -0.2:
+	if x_dif < -0.4:
 		robot_cmd.angular.z = -0.2
-	elif x_dif > 0.2:
+############################ SMARTRIS ################################
+		vel = maxvelSmar * -1
+######################################################################
+	elif x_dif > 0.4:
 		robot_cmd.angular.z = 0.2
+############################ SMARTRIS ################################
+		vel = maxvelSmar
+######################################################################
 	# move towards the center of line detected -> adjust angular vel
 	else:
 		robot_cmd.angular.z = x_dif
-	cmd_pub.publish(robot_cmd)
+############################ SMARTRIS ################################
+		vel = x_dif * maxvelSmar
+		vel = vel
+		
+######################################################################
+	SmartrisRun(vel)
 
 def main():
-	# states variables
-	global in_crosswalk
-	global continue_line
-	global wait_green
-	global in_process
-	global light
-	
-	# check if many 1-contours are detected -> line detected
-	if line:
-		continue_line = True	# follow line
-		in_crosswalk = False	# not crossing intersection
-	
-	# if crosswalk detected and not already inside intersection
-	if zebra and not in_crosswalk:
-		print("entered crosswalk...")
-		in_crosswalk = True		# entered intersection
-		if light == "red":		# wait at crosswalk if no green light
-			wait_green = True
-		else:
-			wait_green = False	# already green light
-		in_process = label		# do not change sign while crossing intersection
-	
-	# if crosswalk detected and already inside intersection
-	elif zebra and in_crosswalk:
-		print("exited crosswalk...")
-		in_crosswalk = False	# exited intersection
-		wait_green = False		# no more traffic lights
-		light = "green"			# always keep movement
-
-	# if stopped at crosswalk due to red light
-	if wait_green:
-		print("wating for green")
-		if light == "green":		# traffic light updates to green
-			wait_green = False		# wait no more
-		else:
-			print("stop, wating for green light")
-			stop()		# stop while red light
-
-	# handling actions
-	if in_crosswalk and wait_green == False:	# crossing intersection
-		continue_line = False	# never follow line 
-		print(light + " :stop_go")
-		if in_process == "vuelta_derecha":	# detected sign is turn right
-			cross_right()		# turn right
-		elif in_process == "derecho":		# detected sign is go forward
-			cross_straight()	# move forward
-		else:
-			stop()		# no forward or turn right sign detected -> no decision so stop
-	# if STOP sign detected, stop until you see no line to follow
-	elif label == "stop" and zero == True:
-		print("Entramos al stop por senyal")
-		stop()
-	# detected sign: no rules
-	elif label == "fin_reglas":
-		print("fin de reglas")
-		follow(0.11,0.0018)		# follow line but a bit faster
-	# line detected and no red light
-	elif continue_line and wait_green == False:
-		follow()	# should follow line
-	else:
-		pass	# no action
-
-
+	rospy.wait_for_service("driver/set_object")
+	follow()
 #------------------------Main-------------------------------
 print("Running main ...")
 while not rospy.is_shutdown():
