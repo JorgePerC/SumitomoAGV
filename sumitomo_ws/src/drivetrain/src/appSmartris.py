@@ -8,7 +8,7 @@ class AppSmartris:
 	def __init__(self, nodeName):
 		#service and suscriber
 		rospy.wait_for_service("driver/set_object")
-		set_object = rospy.ServiceProxy("driver/set_object", SetObject)
+		self.set_object = rospy.ServiceProxy("driver/set_object", SetObject)
 		rospy.Subscriber("/cmd_vel", Twist, self.cmd_Callback)
 
 		# variables
@@ -20,6 +20,7 @@ class AppSmartris:
 
 	def cmd_Callback(self, msg):
 		self.motor_cmd = msg.linear.y
+		
 
 
 	def setVelocity(self):
@@ -30,7 +31,7 @@ class AppSmartris:
 		#########################################
 		try:
 			#get cmd_vel.linear.y value and use service to move motor
-			vel_service_call = set_object(node, obj, str(self.motor_cmd), False)
+			vel_service_call = self.set_object(node, obj, str(self.motor_cmd * 100), False)
 			print("motor in motion", self.motor_cmd)
 			
 		except rospy.ServiceException as e:
@@ -44,12 +45,12 @@ if __name__ == "__main__":
 	node_app = AppSmartris(name)
 
 	print("Running main ...")
-	
+	while not rospy.is_shutdown():
 	# while node active
-	try:
-		rospy.spin()
-	except rospy.ROSInterruptException:
-		print("Killed node", name)
+		try:
+			node_app.setVelocity()
+		except rospy.ROSInterruptException:
+			print("Killed node", name)
 
 
 

@@ -1,0 +1,1236 @@
+ 1116  object: '6060'
+ 1117  value: '0x06'
+ 1118  cached: false" 
+ 1119  rosservice call /driver/set_object "node: 'motorRight'
+ 1120  object: '6060'
+ 1121  value: '0x07'
+ 1122  cached: false" 
+ 1123  rosservice call /driver/set_object "node: 'motorRight'
+ 1124  object: '6060'
+ 1125  value: '0x0F'
+ 1126  cached: false" 
+ 1127  rosrun drivetrain SmartrisDriverInit.py 
+ 1128  rosservice call /driver/set_object "node: 'motorRight'
+ 1129  object: '60FF'
+ 1130  value: '0xFFFFFF'
+ 1131  cached: false" 
+ 1132  rosrun drivetrain SmartrisDriverInit.py 
+ 1133  rosservice call /driver/set_object "node: 'motorRight'
+ 1134  object: '60FF'
+ 1135  value: '0xFFF'
+ 1136  cached: false" 
+ 1137  rosrun drivetrain SmartrisDriverInit.py 
+ 1138  rosservice call /driver/set_object "node: 'motorRight'
+ 1139  object: '60FF'
+ 1140  value: '0xFFFF'
+ 1141  cached: false" 
+ 1142  rosrun drivetrain SmartrisDriverInit.py 
+ 1143  rosservice call /driver/set_object "node: 'motorRight'
+ 1144  object: '60FF'
+ 1145  value: '0x0'
+ 1146  cached: false" 
+ 1147  rosrun drivetrain SmartrisDriverInit.py 
+ 1148  rosservice call /driver/set_object "node: 'motorRight'
+ 1149  object: '60FF'
+ 1150  value: '0xFFFFFF'
+ 1151  cached: false" 
+ 1152  rosrun drivetrain SmartrisDriverInit.py 
+ 1153  rosservice call /driver/set_object "node: 'motorRight'
+ 1154  object: '60FF'
+ 1155  value:  '200000'
+ 1156  cached: false" 
+ 1157  rosrun drivetrain SmartrisDriverInit.py 
+ 1158  rosservice call /driver/set_object "node: 'motorRight'
+ 1159  object: '60FF'
+ 1160  value:  '000'
+ 1161  cached: false" 
+ 1162  rosrun drivetrain SmartrisDriverInit.py 
+ 1163  rosservice call /driver/set_object "node: 'motorRight'
+ 1164  object: '60FF'
+ 1165  value:  'FFFFF'
+ 1166  cached: false" 
+ 1167  rosservice list
+ 1168  rosservice call /driver/set_object "node: 'motorRight'
+ 1169  object: '0x6060'
+ 1170  value: '0x03'
+ 1171  cached: false" 
+ 1172  rosservice call /driver/init "{}" 
+ 1173  rosservice call /driver/set_object "node: 'motorRight'
+ 1174  object: '0x6060'
+ 1175  value: '0x03'
+ 1176  cached: false" 
+ 1177  rosservice call /driver/set_object "node: 'motorRight'
+ 1178  object: '0x60FF'
+ 1179  value: '0x06'
+ 1180  cached: false" 
+ 1181  rosservice call /driver/set_object "node: 'motorRight'
+ 1182  object: '0x60FF'
+ 1183  value: '0x07'
+ 1184  cached: false" 
+ 1185  rosservice call /driver/set_object "node: 'motorRight'
+ 1186  object: '0x60FF'
+ 1187  value: '0x0F'
+ 1188  cached: false" 
+ 1189  rosservice call /driver/set_object "node: 'motorRight'
+ 1190  object: '0x6040'
+ 1191  value: '0x06'
+ 1192  cached: false" 
+ 1193  rosservice call /driver/set_object "node: 'motorRight'
+ 1194  object: '0x6040'
+ 1195  value: '0x07'
+ 1196  cached: false" 
+ 1197  rosservice call /driver/set_object "node: 'motorRight'
+ 1198  object: '0x6040'
+ 1199  value: '0x0F'
+ 1200  cached: false" 
+ 1201  rosservice call /driver/set_object "node: 'motorRight'
+ 1202  object: '0x60FF'
+ 1203  value: '0xFFFFF'
+ 1204  cached: false" 
+ 1205  rosservice call /driver/set_object "node: 'motorRight'
+ 1206  object: '0x6040'
+ 1207  value: '0x06'
+ 1208  cached: false" 
+ 1209  rosservice call /driver/set_object "node: 'motorRight'
+ 1210  object: '0x6040'
+ 1211  value: '0x07'
+ 1212  cached: false" 
+ 1213  rosservice call /driver/set_object "node: 'motorRight'
+ 1214  object: '0x6040'
+ 1215  value: '0x0F'
+ 1216  cached: false" 
+ 1217  rosservice call /driver/set_object "node: 'motorRight'
+ 1218  object: '0x60FF'
+ 1219  value: '0xFFFF'
+ 1220  cached: false" 
+ 1221  rosrun drivetrain SmartrisDriverInit.py 
+ 1222  rosservice call /driver/set_object "node: 'motorRight'
+ 1223  object: '0x6040'
+ 1224  value: '0x0F'
+ 1225  cached: false" 
+ 1226  rosrun drivetrain SmartrisDriverInit.py 
+ 1227  rosservice call /driver/set_object "node: 'motorRight'
+ 1228  object: '0x6060'
+ 1229  value: '0x03'
+ 1230  cached: false" 
+ 1231  rosservice call /driver/init "{}" 
+ 1232  rosservice call /driver/set_object "node: 'motorRight'
+ 1233  object: '0x6060'
+ 1234  value: '0x03'
+ 1235  cached: false" 
+ 1236  rosservice call /driver/set_object "node: 'motorRight'
+ 1237  object: '0x6040'
+ 1238  value: '0x06'
+ 1239  cached: false" 
+ 1240  rosservice call /driver/set_object "node: 'motorRight'
+ 1241  object: '0x6040'
+ 1242  value: '0x07'
+ 1243  cached: false" 
+ 1244  rosservice call /driver/set_object "node: 'motorRight'
+ 1245  object: '0x6040'
+ 1246  value: '0x0f'
+ 1247  cached: false" 
+ 1248  rosservice call /driver/set_object "node: 'motorRight'
+ 1249  object: '0x60FF'
+ 1250  value: '0xFFFFFF'
+ 1251  cached: false" 
+ 1252  rosservice call /driver/set_object "node: 'motorRight'
+ 1253  object: '0x6040'
+ 1254  value: '0x06'
+ 1255  cached: false" 
+ 1256  rosservice call /driver/set_object "node: 'motorRight'
+ 1257  object: '0x6040'
+ 1258  value: '0x07'
+ 1259  cached: false" 
+ 1260  rosservice call /driver/set_object "node: 'motorRight'
+ 1261  object: '0x6040'
+ 1262  value: '0x0f'
+ 1263  cached: false" 
+ 1264  rosservice call /driver/set_object "node: 'motorRight'
+ 1265  object: '0x60FF'
+ 1266  value: '0xFFFFFFFF'
+ 1267  cached: false" 
+ 1268  rosservice call /driver/set_object "node: 'motorRight'
+ 1269  object: '0x6040'
+ 1270  value: '0x06'
+ 1271  cached: false" 
+ 1272  rosservice call /driver/set_object "node: 'motorRight'
+ 1273  object: '0x6040'
+ 1274  value: '0x07'
+ 1275  cached: false" 
+ 1276  rosservice call /driver/set_object "node: 'motorRight'
+ 1277  object: '0x6040'
+ 1278  value: '0x0f'
+ 1279  cached: false" 
+ 1280  rosservice call /driver/set_object "node: 'motorRight'
+ 1281  object: '0x60FF'
+ 1282  value: '0xFFFFFFFF'
+ 1283  cached: false" 
+ 1284  rosservice call /driver/set_object "node: 'motorRight'
+ 1285  object: '0x6040'
+ 1286  value: '0x06'
+ 1287  cached: false" 
+ 1288  rosservice call /driver/set_object "node: 'motorRight'
+ 1289  object: '0x6040'
+ 1290  value: '0x07'
+ 1291  cached: false" 
+ 1292  rosservice call /driver/set_object "node: 'motorRight'
+ 1293  object: '0x6040'
+ 1294  value: '0x0f'
+ 1295  cached: false" 
+ 1296  rosservice call /driver/set_object "node: 'motorRight'
+ 1297  object: '60FF'
+ 1298  value: 'FFFFFFFF'
+ 1299  cached: false" 
+ 1300  rosservice call /driver/set_object "node: 'motorRight'
+ 1301  object: '0x6040'
+ 1302  value: '0x06'
+ 1303  cached: false" 
+ 1304  rosservice call /driver/set_object "node: 'motorRight'
+ 1305  object: '0x6040'
+ 1306  value: '0x07'
+ 1307  cached: false" 
+ 1308  rosservice call /driver/set_object "node: 'motorRight'
+ 1309  object: '0x6040'
+ 1310  value: '0x0f'
+ 1311  cached: false" 
+ 1312  rosservice call /driver/set_object "node: 'motorRight'
+ 1313  object: '60FF'
+ 1314  value: 'FFFFF'
+ 1315  cached: false" 
+ 1316  rosservice call /driver/set_object "node: 'motorRight'
+ 1317  object: '0x6040'
+ 1318  value: '0x06'
+ 1319  cached: false" 
+ 1320  rosservice call /driver/set_object "node: 'motorRight'
+ 1321  object: '0x6040'
+ 1322  value: '0x07'
+ 1323  cached: false" 
+ 1324  rosservice call /driver/set_object "node: 'motorRight'
+ 1325  object: '0x6040'
+ 1326  value: '0x0f'
+ 1327  cached: false" 
+ 1328  rosservice call /driver/set_object "node: 'motorRight'
+ 1329  object: '60FF'
+ 1330  value: 'FFFFFFFFFFF'
+ 1331  cached: false" 
+ 1332  rosservice call /driver/set_object "node: 'motorRight'
+ 1333  object: '0x6040'
+ 1334  value: '0x06'
+ 1335  cached: false" 
+ 1336  rosservice call /driver/set_object "node: 'motorRight'
+ 1337  object: '0x6040'
+ 1338  value: '0x07'
+ 1339  cached: false" 
+ 1340  rosservice call /driver/set_object "node: 'motorRight'
+ 1341  object: '0x6040'
+ 1342  value: '0x0f'
+ 1343  cached: false" 
+ 1344  rosservice call /driver/shutdown "{}" 
+ 1345  rosservice call /driver/init "{}" 
+ 1346  rosrun drivetrain SmartrisDriverInit.py 
+ 1347  rosservice call /driver/set_object "node: 'motorRight'
+ 1348  object: '60FF'
+ 1349  value: '2000000'
+ 1350  cached: false" 
+ 1351  rosrun drivetrain SmartrisDriverInit.py 
+ 1352  rosservice call /driver/get_object "node: 'motorRight'
+ 1353  object: '60FF'
+ 1354  cached: false" 
+ 1355  rosservice call /driver/set_object "node: 'motorRight'
+ 1356  object: '60FF'
+ 1357  value: '2000000'
+ 1358  cached: false" 
+ 1359  rosservice call /driver/get_object "node: 'motorRight'
+ 1360  object: '60FF'
+ 1361  cached: false" 
+ 1362  rosservice call /driver/set_object "node: 'motorRight'
+ 1363  object: '60FF'
+ 1364  value: '2000000'
+ 1365  cached: true" 
+ 1366  rosservice call /driver/get_object "node: 'motorRight'
+ 1367  object: '60FF'
+ 1368  cached: false" 
+ 1369  rosservice call /driver/set_object "node: 'motorRight'
+ 1370  object: '60FF'
+ 1371  value: '2000000'
+ 1372  cached: false" 
+ 1373  rosrun drivetrain SmartrisDriverInit.py 
+ 1374  rosservice call /driver/set_object "node: 'motorRight'
+ 1375  object: '60FF'
+ 1376  value: '2000000'
+ 1377  cached: false" 
+ 1378  rosservice call /driver/get_object "node: 'motorRight'
+ 1379  object: '60FF'
+ 1380  cached: false" 
+ 1381  rosservice call /driver/set_object "node: 'motorRight'
+ 1382  object: '60FF'
+ 1383  value: '2000000'
+ 1384  cached: false" 
+ 1385  rosservice call /driver/get_object "node: 'motorRight'
+ 1386  object: '60FF'
+ 1387  cached: true" 
+ 1388  rosservice call /driver/set_object "node: 'motorRight'
+ 1389  object: '60FF'
+ 1390  value: '2000000'
+ 1391  cached: false" 
+ 1392  rosservice call /driver/get_object "node: 'motorRight'
+ 1393  object: '60FF'
+ 1394  cached: true" 
+ 1395  rosrun drivetrain SmartrisDriverInit.py 
+ 1396  rosservice call /driver/set_object "node: 'motorRight'
+ 1397  object: '60FF'
+ 1398  value: '2000'
+ 1399  cached: false" 
+ 1400  rosrun drivetrain SmartrisDriverInit.py 
+ 1401  rosservice call /driver/set_object "node: 'motorRight'
+ 1402  object: '60FF'
+ 1403  value: '20000'
+ 1404  cached: false" 
+ 1405  rosrun drivetrain SmartrisDriverInit.py 
+ 1406  rosservice call /driver/set_object "node: 'motorRight'
+ 1407  object: '60FF'
+ 1408  value: '40000'
+ 1409  cached: true" 
+ 1410  rosservice call /driver/set_object "node: 'motorRight'
+ 1411  object: '60FF'
+ 1412  value: '40000'
+ 1413  cached: true" 
+ 1414  rosrun drivetrain SmartrisDriverInit.py 
+ 1415  rosservice call /driver/set_object "node: 'motorRight'
+ 1416  object: '0x60FF'
+ 1417  value: '100000'
+ 1418  cached: False" 
+ 1419  rosrun drivetrain SmartrisDriverInit.py 
+ 1420  rosservice call /driver/set_object "node: 'motorRight'
+ 1421  object: '0x60FF'
+ 1422  value: '130000'
+ 1423  cached: False" 
+ 1424  rosrun drivetrain SmartrisDriverInit.py 
+ 1425  rosservice call /driver/set_object "node: 'motorRight'
+ 1426  object: '0x60FF'
+ 1427  value: '100000'
+ 1428  cached: False" 
+ 1429  rosrun drivetrain SmartrisDriverInit.py 
+ 1430  rosservice call /driver/set_object "node: 'motorRight'
+ 1431  object: '0x60FF'
+ 1432  value: '150000'
+ 1433  cached: False" 
+ 1434  rosrun drivetrain SmartrisDriverInit.py 
+ 1435  rosservice call /driver/set_object "node: 'motorRight'
+ 1436  object: '0x60FF'
+ 1437  value: '180000'
+ 1438  cached: False" 
+ 1439  rosservice call /driver/set_object "node: 'motorRight'
+ 1440  object: '0x60FF'
+ 1441  value: '160000'
+ 1442  cached: False" 
+ 1443  rosrun drivetrain SmartrisDriverInit.py 
+ 1444  rosservice call /driver/set_object "node: 'motorRight'
+ 1445  object: '0x60FF'
+ 1446  value: '160000'
+ 1447  cached: False" 
+ 1448  rosservice call /driver/set_object "node: 'motorRight'
+ 1449  object: '0x60FF'
+ 1450  value: '00'
+ 1451  cached: False" 
+ 1452  rosrun drivetrain SmartrisDriverInit.py 
+ 1453  rosservice call /driver/set_object "node: 'motorRight'
+ 1454  object: '0x60FF'
+ 1455  value: '10'
+ 1456  cached: False" 
+ 1457  rosrun vision camera.py 
+ 1458  rosrun rqt_image_view rqt_image_view 
+ 1459  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1460  roslaunch drivetrain robot_in_world.launch 
+ 1461  source devel/setup.bash 
+ 1462  roslaunch drivetrain robot_in_world.launch 
+ 1463  source devel/setup.bash 
+ 1464  roslaunch drivetrain robot_in_world.launch 
+ 1465  source devel/setup.bash 
+ 1466  roslaunch drivetrain robot_in_world.launch 
+ 1467  roslaunch drivetrain canConfig.launch 
+ 1468  rostopic echo /motorRight_60FF
+ 1469  rostopic echo /motorRight_6041
+ 1470  cd Documents
+ 1471  cd Sumiyomo
+ 1472  cd SumiyomoAGV
+ 1473  cd sumitomo_ws
+ 1474  rostopic list
+ 1475  '/home/sumitomo/Desktop/canSetUp.sh' 
+ 1476  candump can0
+ 1477  rostopic list
+ 1478  source devel/setup.bash 
+ 1479  rosrun drivetrain SmartrisDriverInit.py 
+ 1480  rosservice call /driver/set_object "node: 'motorRight'
+ 1481  object: '60FF'
+ 1482  value: '10000'
+ 1483  cached: false" 
+ 1484  rosservice call /driver/set_object "node: 'motorRight'
+ 1485  object: '60FF'
+ 1486  value: '1000000'
+ 1487  cached: false" 
+ 1488  rosservice call /driver/set_object "node: 'motorRight'
+ 1489  object: '60FF'
+ 1490  value: '100000'
+ 1491  cached: false" 
+ 1492  rosservice call /driver/set_object "node: 'motorRight'
+ 1493  object: '60FF'
+ 1494  value: '10000'
+ 1495  cached: false" 
+ 1496  rosservice call /driver/set_object "node: 'motorRight'
+ 1497  object: '60FF'
+ 1498  value: '100000'
+ 1499  cached: false" 
+ 1500  rosservice call /driver/set_object "node: 'motorRight'
+ 1501  object: '60FF'
+ 1502  value: '100'
+ 1503  cached: false" 
+ 1504  rosservice call /driver/set_object "node: 'motorRight'
+ 1505  object: '60FF'
+ 1506  value: '1000000'
+ 1507  cached: false" 
+ 1508  rosservice call /driver/set_object "node: 'motorRight'
+ 1509  object: '60FF'
+ 1510  value: '000'
+ 1511  cached: false" 
+ 1512  source devel/setup.bash 
+ 1513  rosrun drivetrain SmartrisDriverInit.py 
+ 1514  rosservice call /driver/set_object "node: 'motorRight'
+ 1515  object: '0x60FF'
+ 1516  value: '0xFFFFFF'
+ 1517  cached: false" 
+ 1518  rosrun drivetrain SmartrisDriverInit.py 
+ 1519  rosservice call /driver/set_object "node: 'motorRight'
+ 1520  object: '0x60FF'
+ 1521  value: '0xFFFFFFFF'
+ 1522  cached: true" 
+ 1523  rosrun drivetrain SmartrisDriverInit.py 
+ 1524  rosservice call /driver/set_object "node: 'motorRight'
+ 1525  object: '0x60FF'
+ 1526  value: '0xFFFFFFFFF'
+ 1527  cached: true" 
+ 1528  rosservice call /driver/set_object "node: 'motorRight'
+ 1529  object: '0x60FF'
+ 1530  value: '0xFFFFFFFFF'
+ 1531  cached: false" 
+ 1532  rosservice call /driver/set_object "node: 'motorRight'
+ 1533  object: '0x60FF'
+ 1534  value: '0xFFFFFFFF'
+ 1535  cached: false" 
+ 1536  rosservice call /driver/set_object "node: 'motorRight'
+ 1537  object: '0x60FF'
+ 1538  value: '0xFFFFFFF'
+ 1539  cached: false" 
+ 1540  rosservice call /driver/set_object "node: 'motorRight'
+ 1541  object: '0x60FF'
+ 1542  value: '0xFFFFFF'
+ 1543  cached: false" 
+ 1544  rosrun drivetrain SmartrisDriverInit.py 
+ 1545  rosservice call /driver/set_object "node: 'motorRight'
+ 1546  object: '0x60FF'
+ 1547  value: '0xFFFFF'
+ 1548  cached: false" 
+ 1549  rosrun drivetrain SmartrisDriverInit.py 
+ 1550  rosservice call /driver/set_object "node: 'motorRight'
+ 1551  object: '0x60FF'
+ 1552  value: '0xFFFF'
+ 1553  cached: false" 
+ 1554  rosrun drivetrain SmartrisDriverInit.py 
+ 1555  rosservice call /driver/set_object "node: 'motorRight'
+ 1556  object: '0x60FF'
+ 1557  value: '0xFFFF1'
+ 1558  cached: true" 
+ 1559  rosrun drivetrain SmartrisDriverInit.py 
+ 1560  rosservice call /driver/set_object "node: 'motorRight'
+ 1561  object: '0x60FF'
+ 1562  value: '0xFFFF0'
+ 1563  cached: true" 
+ 1564  rosrun drivetrain SmartrisDriverInit.py 
+ 1565  rosservice call /driver/set_object "node: 'motorRight'
+ 1566  object: '0x60FF'
+ 1567  value: '0xFFF1'
+ 1568  cached: true" 
+ 1569  rosrun drivetrain SmartrisDriverInit.py 
+ 1570  rosservice call /driver/set_object "node: 'motorRight'
+ 1571  object: '0x60FF'
+ 1572  value: '0xFFFF'
+ 1573  cached: true" 
+ 1574  rosrun drivetrain SmartrisDriverInit.py 
+ 1575  rosservice call /driver/set_object "node: 'motorRight'
+ 1576  object: '0x60FF'
+ 1577  value: '0xFFFFF'
+ 1578  cached: false" 
+ 1579  rosservice call /driver/set_object "node: 'motorRight'
+ 1580  object: '0x60FF'
+ 1581  value: '0xFFFFF'
+ 1582  cached: false" 
+ 1583  rosrun drivetrain SmartrisDriverInit.py 
+ 1584  rosservice call /driver/set_object "node: 'motorRight'
+ 1585  object: '0x60FF'
+ 1586  value: '0xFF0FF'
+ 1587  cached: false" 
+ 1588  rosrun drivetrain SmartrisDriverInit.py 
+ 1589  rosservice call /driver/set_object "node: 'motorRight'
+ 1590  object: '0x60FF'
+ 1591  value: '0xFF00F'
+ 1592  cached: false" 
+ 1593  rosrun drivetrain SmartrisDriverInit.py 
+ 1594  rosservice call /driver/set_object "node: 'motorRight'
+ 1595  object: '0x60FF'
+ 1596  value: '0xFF000'
+ 1597  cached: false" 
+ 1598  rosservice call /driver/set_object "node: 'motorRight'
+ 1599  object: '0x60FF'
+ 1600  value: '0xFF000'
+ 1601  cached: false" 
+ 1602  rosrun drivetrain SmartrisDriverInit.py 
+ 1603  rosservice call /driver/set_object "node: 'motorRight'
+ 1604  object: '0x60FF'
+ 1605  value: '0xFFF00'
+ 1606  cached: false" 
+ 1607  rosrun drivetrain SmartrisDriverInit.py 
+ 1608  rosservice call /driver/set_object "node: 'motorRight'
+ 1609  object: '0x60FF'
+ 1610  value: '0xF0000'
+ 1611  cached: false" 
+ 1612  rosrun drivetrain SmartrisDriverInit.py 
+ 1613  rosservice call /driver/set_object "node: 'motorRight'
+ 1614  object: '0x60FF'
+ 1615  value: '0xFF00'
+ 1616  cached: false" 
+ 1617  rosrun drivetrain SmartrisDriverInit.py 
+ 1618  rosservice call /driver/set_object "node: 'motorRight'
+ 1619  object: '0x60FF'
+ 1620  value: '0xFFFF00'
+ 1621  cached: false" 
+ 1622  rosrun drivetrain SmartrisDriverInit.py 
+ 1623  rosservice call /driver/set_object "node: 'motorRight'
+ 1624  object: '0x60FF'
+ 1625  value: '0xFFFF00'
+ 1626  cached: false" 
+ 1627  rosrun drivetrain SmartrisDriverInit.py 
+ 1628  rosservice call /driver/set_object "node: 'motorRight'
+ 1629  object: '0x60FF'
+ 1630  value: '0xFFFF00'
+ 1631  cached: false" 
+ 1632  rosrun drivetrain SmartrisDriverInit.py 
+ 1633  rosservice call /driver/set_object "node: 'motorRight'
+ 1634  object: '0x60FF'
+ 1635  value: '0xFFFF00'
+ 1636  cached: false" 
+ 1637  rosrun drivetrain SmartrisDriverInit.py 
+ 1638  rosservice call /driver/set_object "node: 'motorRight'
+ 1639  object: '0x60FF'
+ 1640  value: '0xFFFFF00'
+ 1641  cached: false" 
+ 1642  rosrun drivetrain SmartrisDriverInit.py 
+ 1643  rosservice call /driver/set_object "node: 'motorRight'
+ 1644  object: '0x60FF'
+ 1645  value: '0xFFF00'
+ 1646  cached: false" 
+ 1647  rosrun drivetrain SmartrisDriverInit.py 
+ 1648  rosservice call /driver/set_object "node: 'motorRight'
+ 1649  object: '0x60FF'
+ 1650  value: '0xFF00'
+ 1651  cached: false" 
+ 1652  rosrun drivetrain SmartrisDriverInit.py 
+ 1653  rosservice call /driver/set_object "node: 'motorRight'
+ 1654  object: '0x60FF'
+ 1655  value: '0xFFFF00'
+ 1656  cached: false" 
+ 1657  rosrun drivetrain SmartrisDriverInit.py 
+ 1658  rosservice call /driver/set_object "node: 'motorRight'
+ 1659  object: '0x60FF'
+ 1660  value: '0xFFF00'
+ 1661  cached: false" 
+ 1662  rosrun drivetrain SmartrisDriverInit.py 
+ 1663  rosservice call /driver/set_object "node: 'motorRight'
+ 1664  object: '0x60FF'
+ 1665  value: '0xFF000'
+ 1666  cached: false" 
+ 1667  rosrun drivetrain SmartrisDriverInit.py 
+ 1668  rosservice call /driver/set_object "node: 'motorRight'
+ 1669  object: '0x60FF'
+ 1670  value: '0xFFF000'
+ 1671  cached: false" 
+ 1672  rosrun drivetrain SmartrisDriverInit.py 
+ 1673  rosservice call /driver/set_object "node: 'motorRight'
+ 1674  object: '0x60FF'
+ 1675  value: '0xFF000'
+ 1676  cached: false" 
+ 1677  rosrun drivetrain SmartrisDriverInit.py 
+ 1678  rosservice call /driver/set_object "node: 'motorRight'
+ 1679  object: '0x60FF'
+ 1680  value: '0xFFF000'
+ 1681  cached: false" 
+ 1682  rosrun drivetrain SmartrisDriverInit.py 
+ 1683  rosservice call /driver/set_object "node: 'motorRight'
+ 1684  object: '0x60FF'
+ 1685  value: '0xFFF000'
+ 1686  cached: false" 
+ 1687  rosrun drivetrain SmartrisDriverInit.py 
+ 1688  rosservice call /driver/set_object "node: 'motorRight'
+ 1689  object: '0x60FF'
+ 1690  value: '0xFFF000'
+ 1691  cached: false" 
+ 1692  rosrun drivetrain SmartrisDriverInit.py 
+ 1693  rosservice call /driver/set_object "node: 'motorRight'
+ 1694  object: '0x60FF'
+ 1695  value: '0xFFFF000'
+ 1696  cached: false" 
+ 1697  rosservice call /driver/get_object "node: 'motorRight'
+ 1698  object: '2005sub8'
+ 1699  cached: false" 
+ 1700  rosservice call /driver/get_object "node: 'motorRight'
+ 1701  object: '2002'
+ 1702  cached: false" 
+ 1703  rosrun drivetrain SmartrisDriverInit.py 
+ 1704  rosservice call /driver/get_object "node: 'motorRight'
+ 1705  object: '2002'
+ 1706  cached: false" 
+ 1707  rosservice call /driver/get_object "node: 'motorRight'
+ 1708  object: '2002'
+ 1709  cached: false" 
+ 1710  rosservice call /driver/set_object "node: 'motorRight'
+ 1711  object: '0x60FF'
+ 1712  value: '0xFFFF000'
+ 1713  cached: false" 
+ 1714  rosservice call /driver/get_object "node: 'motorRight'
+ 1715  object: '2002'
+ 1716  cached: false" 
+ 1717  rosservice call /driver/get_object "node: 'motorRight'
+ 1718  object: '2006sub3'
+ 1719  cached: false" 
+ 1720  rosservice call /driver/get_object "node: 'motorRight'
+ 1721  object: '4000sub2'
+ 1722  cached: false" 
+ 1723  rosservice call /driver/get_object "node: 'motorRight'
+ 1724  object: '4000sub1'
+ 1725  cached: false" 
+ 1726  rosservice call /driver/get_object "node: 'motorRight'
+ 1727  object: '4000sub2'
+ 1728  cached: false" 
+ 1729  rosservice call /driver/get_object "node: 'motorRight'
+ 1730  object: '4000sub1'
+ 1731  cached: false" 
+ 1732  rosservice call /driver/get_object "node: 'motorRight'
+ 1733  object: '4000sub1'
+ 1734  cached: false" 
+ 1735  rosservice call /driver/get_object "node: 'motorRight'
+ 1736  object: '4000sub2'
+ 1737  cached: false" 
+ 1738  rosservice call /driver/get_object "node: 'motorRight'
+ 1739  object: '4000sub2'
+ 1740  cached: false" 
+ 1741  rosservice call /driver/get_object "node: 'motorRight'
+ 1742  object: '4000sub1'
+ 1743  cached: false" 
+ 1744  rosservice call /driver/get_object "node: 'motorRight'
+ 1745  object: '4100sub3'
+ 1746  cached: false" 
+ 1747  rosservice call /driver/get_object "node: 'motorRight'
+ 1748  object: '4100sub4'
+ 1749  cached: false" 
+ 1750  rosservice call /driver/get_object "node: 'motorRight'
+ 1751  object: '4101sub1'
+ 1752  cached: false" 
+ 1753  rosservice call /driver/get_object "node: 'motorRight'
+ 1754  object: '6041'
+ 1755  cached: false" 
+ 1756  rosrun drivetrain SmartrisDriverInit.py 
+ 1757  rosservice call /driver/get_object "node: 'motorRight'
+ 1758  object: '6041'
+ 1759  cached: false" 
+ 1760  rosservice call /driver/set_object "node: 'motorRight'
+ 1761  object: '0x60FF'
+ 1762  value: '0000'
+ 1763  cached: false" 
+ 1764  rosservice call /driver/get_object "node: 'motorRight'
+ 1765  object: '6041'
+ 1766  cached: false" 
+ 1767  rosrun drivetrain SmartrisDriverInit.py 
+ 1768  rosservice call /driver/get_object "node: 'motorRight'
+ 1769  object: '6041'
+ 1770  cached: false" 
+ 1771  rosrun drivetrain SmartrisDriverInit.py 
+ 1772  rosservice call /driver/get_object "node: 'motorRight'
+ 1773  object: '6041'
+ 1774  cached: false" 
+ 1775  rosservice call /driver/get_object "node: 'motorRight'
+ 1776  object: '603F'
+ 1777  cached: false" 
+ 1778  rosservice call /driver/set_object "node: 'motorRight'
+ 1779  object: '0x6040'
+ 1780  value: '0x'
+ 1781  cached: false" 
+ 1782  rosservice call /driver/set_object "node: 'motorRight'
+ 1783  object: '0x6040'
+ 1784  value: '0x040B'
+ 1785  cached: false" 
+ 1786  rosservice call /driver/set_object "node: 'motorRight'
+ 1787  object: '0x6060'
+ 1788  value: '0x06'
+ 1789  cached: false" 
+ 1790  rosservice call /driver/set_object "node: 'motorRight'
+ 1791  object: '0x6060'
+ 1792  value: '0x07'
+ 1793  cached: false" 
+ 1794  rosservice call /driver/set_object "node: 'motorRight'
+ 1795  object: '0x6060'
+ 1796  value: '0x0f'
+ 1797  cached: false" 
+ 1798  rosservice call /driver/set_object "node: 'motorRight'
+ 1799  object: '0x6040'
+ 1800  value: '0x040B'
+ 1801  cached: false" 
+ 1802  rosservice call /driver/set_object "node: 'motorRight'
+ 1803  object: '0x6060'
+ 1804  value: '0x06'
+ 1805  cached: false" 
+ 1806  rosservice call /driver/set_object "node: 'motorRight'
+ 1807  object: '0x6060'
+ 1808  value: '0x07'
+ 1809  cached: false" 
+ 1810  rosservice call /driver/set_object "node: 'motorRight'
+ 1811  object: '0x6060'
+ 1812  value: '0x0f'
+ 1813  cached: false" 
+ 1814  rosservice call /driver/set_object "node: 'motorRight'
+ 1815  object: '0x6040'
+ 1816  value: '0x03'
+ 1817  cached: false" 
+ 1818  rosservice call /driver/set_object "node: 'motorRight'
+ 1819  object: '0x6060'
+ 1820  value: '0x06'
+ 1821  cached: false" 
+ 1822  rosservice call /driver/set_object "node: 'motorRight'
+ 1823  object: '0x6060'
+ 1824  value: '0x07'
+ 1825  cached: false" 
+ 1826  rosservice call /driver/set_object "node: 'motorRight'
+ 1827  object: '0x6060'
+ 1828  value: '0x0f'
+ 1829  cached: false" 
+ 1830  rosservice call /driver/init "{}" 
+ 1831  rosservice call /driver/set_object "node: 'motorRight'
+ 1832  object: '0x6040'
+ 1833  value: '0x040B'
+ 1834  cached: false" 
+ 1835  rosservice call /driver/set_object "node: 'motorRight'
+ 1836  object: '0x6060'
+ 1837  value: '0x06'
+ 1838  cached: false" 
+ 1839  rosservice call /driver/set_object "node: 'motorRight'
+ 1840  object: '0x6060'
+ 1841  value: '0x07'
+ 1842  cached: false" 
+ 1843  rosservice call /driver/set_object "node: 'motorRight'
+ 1844  object: '0x6060'
+ 1845  value: '0x0f'
+ 1846  cached: false" 
+ 1847  rosservice call /driver/set_object "node: 'motorRight'
+ 1848  object: '0x6040'
+ 1849  value: '0x03'
+ 1850  cached: false" 
+ 1851  rosservice call /driver/set_object "node: 'motorRight'
+ 1852  object: '0x6060'
+ 1853  value: '0x06'
+ 1854  cached: false" 
+ 1855  rosservice call /driver/set_object "node: 'motorRight'
+ 1856  object: '0x6060'
+ 1857  value: '0x07'
+ 1858  cached: false" 
+ 1859  rosservice call /driver/set_object "node: 'motorRight'
+ 1860  object: '0x6060'
+ 1861  value: '0x0f'
+ 1862  cached: false" 
+ 1863  rosrun drivetrain SmartrisDriverInit.py 
+ 1864  rosservice call /driver/shutdown "{}" 
+ 1865  rosservice call /driver/set_object "node: 'motorRight'
+ 1866  object: '0x60FF'
+ 1867  value: '0x06'
+ 1868  cached: false" 
+ 1869  rosrun drivetrain SmartrisDriverInit.py 
+ 1870  rosservice call /driver/set_object "node: 'motorRight'
+ 1871  object: '0x60FF'
+ 1872  value: '0xFFFFF'
+ 1873  cached: false" 
+ 1874  rosservice call /driver/set_object "node: 'motorRight'
+ 1875  object: '0x60FF'
+ 1876  value: '0xFFF'
+ 1877  cached: false" 
+ 1878  rosservice call /driver/set_object "node: 'motorRight'
+ 1879  object: '0x60FF'
+ 1880  value: '0xFFFFF'
+ 1881  cached: false" 
+ 1882  rosservice call /driver/set_object "node: 'motorRight'
+ 1883  object: '0x60FF'
+ 1884  value: '0xFFFFFFF'
+ 1885  cached: false" 
+ 1886  rosservice call /driver/set_object "node: 'motorRight'
+ 1887  object: '0x60FF'
+ 1888  value: '0xFFF'
+ 1889  cached: false" 
+ 1890  rosservice call /driver/set_object "node: 'motorRight'
+ 1891  object: '0x60FF'
+ 1892  value: '0xFFFFFFF'
+ 1893  cached: false" 
+ 1894  rosservice call /driver/set_object "node: 'motorRight'
+ 1895  object: '0x60FF'
+ 1896  value: '0xFFFF'
+ 1897  cached: false" 
+ 1898  rosservice call /driver/set_object "node: 'motorRight'
+ 1899  object: '0x60FF'
+ 1900  value: '0xFFFFF'
+ 1901  cached: false" 
+ 1902  rosservice call /driver/set_object "node: 'motorRight'
+ 1903  object: '0x60FF'
+ 1904  value: '0xFFFFFF'
+ 1905  cached: false" 
+ 1906  rosservice call /driver/set_object "node: 'motorRight'
+ 1907  object: '0x60FF'
+ 1908  value: '0xFFFFFFF'
+ 1909  cached: false" 
+ 1910  rosservice call /driver/set_object "node: 'motorRight'
+ 1911  object: '0x60FF'
+ 1912  value: '0xFFFF'
+ 1913  cached: false" 
+ 1914  rosservice call /driver/set_object "node: 'motorRight'
+ 1915  object: '0x60FF'
+ 1916  value: '0x0'
+ 1917  cached: false" 
+ 1918  rostopic list
+ 1919  source devel/setup.bash 
+ 1920  rosrun drivetrain appSmartris.py 
+ 1921  ifconfig
+ 1922  rosrun drivetrain appSmartris.py 
+ 1923  rosrun drivetrain SmartrisDriverInit.py 
+ 1924  rosrun drivetrain appSmartris.py 
+ 1925  rostopic list
+ 1926  rosrun drivetrain appSmartris.py 
+ 1927  rostopi list
+ 1928  rostopic list
+ 1929  rostopic echo /cmd_vel 
+ 1930  rosrun drivetrain appSmartris.py 
+ 1931  rostopic echo /motorRight_60FF
+ 1932  rostopic echo /cmd_vel /
+ 1933  rostopic echo /cmd_vel 
+ 1934  history |grep 0x40B
+ 1935  history |grep 0x040B
+ 1936  history |grep 040B
+ 1937  rostopic echo /motorRight_60FF
+ 1938  rostopic echo /cmd_vel 
+ 1939  '/home/sumitomo/Desktop/canSetUp.sh' 
+ 1940  ifconfig
+ 1941  source devel/setup.bash 
+ 1942  rosrun drivetrain SmartrisDriverInit.py 
+ 1943  rosservice call /driver/get_object "node: 'motorRight'
+ 1944  object: '0x60FF'
+ 1945  cached: false" 
+ 1946  rosservice call /driver/get_object "node: 'motorRight'
+ 1947  object: '0x603F'
+ 1948  cached: false" 
+ 1949  rosrun drivetrain SmartrisDriverInit.py 
+ 1950  rosrun drivetrain appSmartris.py 
+ 1951  rosrun drivetrain SmartrisDriverInit.py 
+ 1952  rostopic list
+ 1953  source devel/setup.bash 
+ 1954  rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+ 1955    x: 0.0
+ 1956    y: 10000.0
+ 1957    z: 0.0
+ 1958  angular:
+ 1959    x: 0.0
+ 1960    y: 0.0
+ 1961    z: 0.0" 
+ 1962  rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+ 1963    x: 0.0
+ 1964    y: 10000.0
+ 1965    z: 0.0
+ 1966  angular:
+ 1967    x: 0.0
+ 1968    y: 0.0
+ 1969    z: 0.0" 
+ 1970  rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+ 1971    x: 0.0
+ 1972    y: 10000.0
+ 1973    z: 0.0
+ 1974  angular:
+ 1975    x: 0.0
+ 1976    y: 0.0
+ 1977    z: 0.0" 
+ 1978  cd Documents/SumiyomoAGV/sumitomo_ws/
+ 1979  git status
+ 1980  git add .
+ 1981  git commit -m "Agus friday 18 Nov"
+ 1982  git push origin main
+ 1983  ifconfig 
+ 1984  source devel/setup.bash 
+ 1985  roslaunch drivetrain canConfig.launch 
+ 1986  git add .
+ 1987  git commit -m "Spawning and deleted junk files"
+ 1988  git push origin main 
+ 1989  roslaunch drivetrain canConfig.launch 
+ 1990  roslaunch drivetrain robot_in_world.launch 
+ 1991  git add .
+ 1992  git commit -m "correction app.py"
+ 1993  git push origin main 
+ 1994  source devel/setup.bash 
+ 1995  rosrun drivetrain SmartrisDriverInit.py 
+ 1996  rosservice call /driver/get_object "node: 'motorRight'
+ 1997  object: '0x603F'
+ 1998  cached: false" 
+ 1999  rosrun drivetrain SmartrisDriverInit.py 
+ 2000  source devel/setup.bash 
+ 2001  rosrun drivetrain SmartrisDriverInit.py 
+ 2002  rosservice call /driver/recover "{}" 
+ 2003  rosservice call /driver/set_object "node: 'motorRight'
+object: '6060'
+value: '03'
+cached: false" 
+ 2004  rosservice call /driver/init "{}" 
+ 2005  rosservice call /driver/set_object "node: 'motorRight'
+object: '6060'
+value: '03'
+cached: false" 
+ 2006  rosservice call /driver/set_object "node: 'motorRight'
+object: '6040'
+value: '06'
+cached: false" 
+ 2007  rosservice call /driver/set_object "node: 'motorRight'
+object: '6040'
+value: '07'
+cached: false" 
+ 2008  rosservice call /driver/set_object "node: 'motorRight'
+object: '6040'
+value: '0f'
+cached: false" 
+ 2009  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x03'
+cached: false" 
+ 2010  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2011  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2012  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2013  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: false" 
+ 2014  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040B'
+cached: false" 
+ 2015  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2016  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2017  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2018  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFF'
+cached: false" 
+ 2019  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040B'
+cached: false" 
+ 2020  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2021  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2022  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2023  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: false" 
+ 2024  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040B'
+cached: false" 
+ 2025  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2026  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2027  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2028  rosservice call /driver/set_object "node: 'motorRight'
+object: '6060'
+value: '10000'
+cached: false" 
+ 2029  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040B'
+cached: false" 
+ 2030  rosservice call /driver/init "{}" 
+ 2031  rosservice call /driver/get_object "node: 'motorRight'
+object: '6061'
+cached: false" 
+ 2032  rosservice call /driver/get_object "node: 'motorRight'
+object: '0x6061'
+cached: false" 
+ 2033  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040B'
+cached: false" 
+ 2034  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2035  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2036  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2037  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2038  rosservice call /driver/recover "{}" 
+ 2039  rosservice call /driver/shutdown "{}" 
+ 2040  rosservice call /driver/recover "{}" 
+ 2041  rosservice call /driver/init "{}" 
+ 2042  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040A'
+cached: false" 
+ 2043  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2044  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2045  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2046  rosservice call /driver/get_object "node: 'motor Right'
+object: '603F'
+cached: false" 
+ 2047  rosservice call /driver/get_object "node: 'motorRight'
+object: '603F'
+cached: false" 
+ 2048  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x03'
+cached: false" 
+ 2049  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2050  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2051  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2052  rosrun drivetrain SmartrisDriverInit.py 
+ 2053  rosservice call /driver/get_object "node: 'motorRight'
+object: '603F'
+cached: false" 
+ 2054  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x03'
+cached: false" 
+ 2055  rosservice call /driver/init "{}" 
+ 2056  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x03'
+cached: false" 
+ 2057  rosrun drivetrain SmartrisDriverInit.py 
+ 2058  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: false" 
+ 2059  rosrun drivetrain SmartrisDriverInit.py 
+ 2060  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFF'
+cached: false" 
+ 2061  rosrun drivetrain SmartrisDriverInit.py 
+ 2062  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFF'
+cached: false" 
+ 2063  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x3'
+cached: false" 
+ 2064  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2065  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2066  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0F'
+cached: false" 
+ 2067  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFF'
+cached: false" 
+ 2068  rosrun drivetrain SmartrisDriverInit.py 
+ 2069  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: false" 
+ 2070  rosrun drivetrain SmartrisDriverInit.py 
+ 2071  rosservice call /driver/get_object "node: 'motorRight'
+object: '3007'
+cached: false" 
+ 2072  rosservice call /driver/get_object "node: 'motorRight'
+object: '2004'
+cached: false" 
+ 2073  rosservice call /driver/get_object "node: 'motorRight'
+object: '6041'
+cached: false" 
+ 2074  rosservice call /driver/init "{}" 
+ 2075  rosservice call /driver/get_object "node: 'motorRight'
+object: '6041'
+cached: false" 
+ 2076  rosservice call /driver/get_object "node: 'motorRight'
+object: '2004'
+cached: false" 
+ 2077  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x2004'
+value: '0x08'
+cached: false" 
+ 2078  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x040F'
+cached: false" 
+ 2079  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x040F'
+cached: false" 
+ 2080  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x06'
+cached: false" 
+ 2081  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x07'
+cached: false" 
+ 2082  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x0f'
+cached: false" 
+ 2083  rosrun drivetrain SmartrisDriverInit.py 
+ 2084  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0x040F'
+cached: false" 
+ 2085  rosrun drivetrain SmartrisDriverInit.py 
+ 2086  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '10000'
+cached: false" 
+ 2087  rosrun drivetrain SmartrisDriverInit.py 
+ 2088  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '10000'
+cached: false" 
+ 2089  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '100000'
+cached: false" 
+ 2090  rosrun drivetrain SmartrisDriverInit.py 
+ 2091  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '100000'
+cached: false" 
+ 2092  rosrun drivetrain SmartrisDriverInit.py 
+ 2093  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '10000'
+cached: false" 
+ 2094  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6040'
+value: '0x040B'
+cached: false" 
+ 2095  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x06'
+cached: false" 
+ 2096  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x07'
+cached: false" 
+ 2097  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x6060'
+value: '0x0F'
+cached: false" 
+ 2098  rosrun drivetrain SmartrisDriverInit.py 
+ 2099  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '100000'
+cached: false" 
+ 2100  rosrun drivetrain SmartrisDriverInit.py 
+ 2101  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '10000'
+cached: false" 
+ 2102  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '1000000'
+cached: false" 
+ 2103  rosrun drivetrain SmartrisDriverInit.py 
+ 2104* rosservice call /driver/
+ 2105  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '1000000'
+cached: false" 
+ 2106  rosrun drivetrain SmartrisDriverInit.py 
+ 2107  rosservice call /driver/halt "{}" 
+ 2108  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '100000'
+cached: false" 
+ 2109  rosrun drivetrain Smart
+ 2110  rosrun drivetrain SmartrisDriverInit.py 
+ 2111  rosservice call /driver/set_object "node: 'motorRight'
+object: '60FF'
+value: '1000000'
+cached: false" 
+ 2112  history |grep
+ 2113  hisory
+ 2114  history <>
+ 2115  history > hola.txt

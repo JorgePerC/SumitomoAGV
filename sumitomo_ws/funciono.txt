@@ -1,0 +1,36 @@
+
+ 2090  rosservice call /driver/halt "{}" 
+ 2091  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: true" 
+ 2092  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFFF'
+cached: true" 
+ 2093* rosrun drivetrain Smartr
+ 2094  rosservice call /driver/shutdown "{}" 
+ 2095  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: true" 
+ 2096  rosservice call /driver/init "{}" 
+ 2097  rosservice call /driver/halt "{}" 
+ 2098  rosservice call /driver/init "{}" 
+ 2099  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFF'
+cached: true" 
+ 2100  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFFFF'
+cached: true" 
+ 2101  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0x0'
+cached: true" 
+ 2102  rosservice call /driver/set_object "node: 'motorRight'
+object: '0x60FF'
+value: '0xFFFF'
+cached: true" 
+ 2103  history > funciono.txt

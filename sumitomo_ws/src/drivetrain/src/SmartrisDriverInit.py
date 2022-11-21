@@ -22,6 +22,8 @@ if __name__ == "__main__":
 	#wait for the services to initalize 
 	rospy.wait_for_service("driver/set_object")
 	rospy.wait_for_service("driver/init")
+	rospy.wait_for_service("driver/halt")
+	rospy.wait_for_service("driver/shutdown")
 	# put the Smartris in Init mode 
 	driverInit = rospy.ServiceProxy("driver/init", Trigger)
         init_call = driverInit()
@@ -30,16 +32,40 @@ if __name__ == "__main__":
 	node = "motorRight"
 	# create two list with the object and the msg in order to create
 	# the sequence
-	objects = ['0x6060', '0x6040','0x6040','0x6040']
-	values =['0x040B', '0x06', '0x07', '0x0F']
+	objects = [ '0x6060', '0x6040','0x6040','0x6040']
+	values =[ '0x03', '0x06', '0x07', '0x0F']
+	objects2 = ['0x6060', '0x6040','0x6040','0x6040']
+	values2 =['0x03', '0x06', '0x07', '0x0F']
 	# run the sequence 
 	for i in xrange(len(values)):
 		initSmartris(node, objects[i],values[i])
 		# wait to make sure all messages have time to be sent 
 		# other values may work
 		rospy.sleep(.3)
-
+	
+	#run sequence halt, shutdown, init, halt, init for proper velocity use
+	driverhalt = rospy.ServiceProxy("driver/halt", Trigger)
+	halt_call = driverhalt()
+	print("Halt")
+	rospy.sleep(5)
+	drivershutdown = rospy.ServiceProxy("driver/shutdown", Trigger)
+	shutdown_call = drivershutdown()
+	print("Shutdown")
+	rospy.sleep(10)
+	#this init should send an error
+	driverInit = rospy.ServiceProxy("driver/init", Trigger)
+	init_call = driverInit()
+	print("Init")
+	rospy.sleep(10)
+	driverhalt = rospy.ServiceProxy("driver/halt", Trigger)
+	halt_call = driverhalt()
+	print("Halt")
+	rospy.sleep(5)
+	driverInit = rospy.ServiceProxy("driver/init", Trigger)
+	init_call = driverInit()
+	print("Init")
 	print("Smartris in run")
+	
 	
 	
 		
