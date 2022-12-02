@@ -13,7 +13,7 @@ class LineFollowerNode():
 		# constructor node publishers and subscribers and class variables
 		rospy.init_node("line_detector")
 		self.img_pub = rospy.Publisher("/processed_image/line",Image,queue_size=1)
-		self.zebra_pub = rospy.Publisher("/zebra",Bool,queue_size=1)
+		self.cebra_pub = rospy.Publisher("/cebra",Bool,queue_size=1)
 		self.ones_pub = rospy.Publisher("/line",Bool,queue_size=1)
 		self.zero_pub = rospy.Publisher("/zero",Bool,queue_size=1)
 		self.bridge = cv_bridge.CvBridge()
@@ -90,11 +90,11 @@ class LineFollowerNode():
 				self.after_zero.append(count)
 			# check out 3 or 4 contours to confirm crosswalk detection
 			if 3 in self.after_zero or 4 in self.after_zero:
-				self.zebra_pub.publish(True)
-				print("zebra detected")
+				self.cebra_pub.publish(True)
+				print("cebra detected")
 				self.after_zero = []
 			else:
-				self.zebra_pub.publish(False)
+				self.cebra_pub.publish(False)
 			# crosswalk saturation -> restart accumulator
 			if len(self.after_zero) >= 65:
 				self.after_zero = []

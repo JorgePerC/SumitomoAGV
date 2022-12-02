@@ -24,6 +24,8 @@ if __name__ == "__main__":
 	rospy.wait_for_service("driver/init")
 	rospy.wait_for_service("driver/halt")
 	rospy.wait_for_service("driver/shutdown")
+	driverhalt = rospy.ServiceProxy("driver/halt", Trigger)
+	drivershutdown = rospy.ServiceProxy("driver/shutdown", Trigger)
 	# put the Smartris in Init mode 
 	driverInit = rospy.ServiceProxy("driver/init", Trigger)
         init_call = driverInit()
@@ -37,34 +39,31 @@ if __name__ == "__main__":
 	objects2 = ['0x6060', '0x6040','0x6040','0x6040']
 	values2 =['0x03', '0x06', '0x07', '0x0F']
 	# run the sequence 
-	for i in xrange(len(values)):
+	for i in range(len(values)):
 		initSmartris(node, objects[i],values[i])
 		# wait to make sure all messages have time to be sent 
 		# other values may work
 		rospy.sleep(.3)
 	
-	#run sequence halt, shutdown, init, halt, init for proper velocity use
-	driverhalt = rospy.ServiceProxy("driver/halt", Trigger)
-	halt_call = driverhalt()
-	print("Halt")
-	rospy.sleep(5)
-	drivershutdown = rospy.ServiceProxy("driver/shutdown", Trigger)
-	shutdown_call = drivershutdown()
-	print("Shutdown")
-	rospy.sleep(10)
-	#this init should send an error
-	driverInit = rospy.ServiceProxy("driver/init", Trigger)
-	init_call = driverInit()
-	print("Init")
-	rospy.sleep(10)
-	driverhalt = rospy.ServiceProxy("driver/halt", Trigger)
-	halt_call = driverhalt()
-	print("Halt")
-	rospy.sleep(5)
-	driverInit = rospy.ServiceProxy("driver/init", Trigger)
-	init_call = driverInit()
-	print("Init")
-	print("Smartris in run")
+	#run sequence halt, shutdown, init, halt, init for proper velocity use, two times for good measure
+	for i in xrange(2):
+		driverhalt = rospy.ServiceProxy("driver/halt", Trigger)
+		halt_call = driverhalt()
+		print("Halt")
+		rospy.sleep(3)
+		shutdown_call = drivershutdown()
+		print("Shutdown")
+		rospy.sleep(3)
+		#this init should send an error
+		#init_call = driverInit()
+		#print("Init")
+		#rospy.sleep(3)
+		halt_call = driverhalt()
+		print("Halt")
+		rospy.sleep(3)
+		init_call = driverInit()
+		print("Init")
+		print("Smartris in run")
 	
 	
 	

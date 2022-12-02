@@ -10,6 +10,7 @@ class AppSmartris:
 		rospy.wait_for_service("driver/set_object")
 		self.set_object = rospy.ServiceProxy("driver/set_object", SetObject)
 		rospy.Subscriber("/cmd_vel", Twist, self.cmd_Callback)
+		rospy.Subscriber("/Ultra", Float32, self.ultra_fault)
 
 		# variables
 		self.motor_cmd = 0 
@@ -21,7 +22,12 @@ class AppSmartris:
 	def cmd_Callback(self, msg):
 		self.motor_cmd = msg.linear.y
 		
-
+	def ultra_fault(self, msg):
+		dist = msg.data
+		
+		if dist < 40: # These are cm
+			self.motor_cmd = 0
+		
 
 	def setVelocity(self):
 		######### SMARTRIS #######################
@@ -31,7 +37,10 @@ class AppSmartris:
 		#########################################
 		try:
 			#get cmd_vel.linear.y value and use service to move motor
-			vel_service_call = self.set_object(node, obj, str(self.motor_cmd * 100), False)
+
+			# Check if the ultrasonic is being blocked
+			
+			vel_service_call = self.set_object(node, obj, str(self.motor_cmd * 10), False)
 			print("motor in motion", self.motor_cmd)
 			
 		except rospy.ServiceException as e:
